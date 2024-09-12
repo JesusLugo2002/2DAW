@@ -19,7 +19,7 @@ const year = 1999
 Son exactamente iguales a los de Python, asi que sin rayarse. 
 
 <div align=center>
-    <img src="../files/JavaScript-Operators.jpg" alt="JavaScript Operators"/>
+    <img src="./img/JavaScript-Operators.jpg" alt="JavaScript Operators"/>
 </div>
 
 También sirven las variantes de +=, -=, *=, /=
