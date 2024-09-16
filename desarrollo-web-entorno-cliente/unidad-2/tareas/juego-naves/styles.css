@@ -1,0 +1,42 @@
+body {
+    margin: 10px;
+    background-image: url('./img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.barra {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    width: 700px;
+    padding: 10px;
+    margin: 9px 0;
+    box-sizing: border-box;
+}
+
+#my_canvas {
+    background: #000;
+    border: #000 1px solid;
+}
+
+.button {
+    color: red;
+    font-size: 40px;
+    background-color: #000;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid blue;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
