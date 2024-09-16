@@ -16,3 +16,27 @@ Utilizar esta relación para implementar una función sinDegAlt(x) que obtenga e
 de un ángulo x (en grados) usando para ello la función cosDeg(x) anteriormente
 implementada. Implementar también la función inversa al apartado anterior:
 cosDegAlt(x) usando para ello sinDeg(x) */
+
+function deg2rad(x) {
+    return x * (Math.PI / 180)
+}
+
+function rad2deg(x) {s
+    return x * (180 / Math.PI)
+}
+
+function sinDeg(x) {
+    return Math.sin(deg2rad(x))
+}
+
+function cosDeg(x) {
+    return Math.cos(deg2rad(x))
+}
+
+function sinDegAlt(x) {
+    return Math.sqrt(1 - Math.pow(cosDeg(x), 2))
+}
+
+function cosDegAlt(x) {
+    return Math.sqrt(1 - Math.pow(sinDeg(x), 2))
+}
