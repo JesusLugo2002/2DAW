@@ -10,11 +10,11 @@ function count_char(text, char) {
     } else {
         for (let i = 0; i < text.length; i++) {
             if (text.charAt(i) === char) {
-                count++;
+                count += 1;
             }
         }
     }
     return count
 }
 
-console.log(count_char('Holaaa', 'a'))
+console.log(count_char('Hola, mi nombre es Zarina.', 'a'))
