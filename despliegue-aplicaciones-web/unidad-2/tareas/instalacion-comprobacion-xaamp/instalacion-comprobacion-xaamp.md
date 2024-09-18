@@ -43,4 +43,10 @@ Así mismo, para pedir un nombre de usuario y una contraseña para acceder al pa
     <img src="./img/config-file2.png" alt="changing-login"/>
 </div>
 
+Ya con este cambio, cada vez que entremos al portal de PHPMyAdmin, se nos pirá iniciar sesión con un nombre de usuario y contraseña.
+
+<div align=center>
+    <img src="./img/login.png" alt="login"/>
+</div>
+
 ## Comprobación
