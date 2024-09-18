@@ -11,3 +11,4 @@
 9. [__JavaScript Regular Expression Visualizer__](https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24): Herramienta para visualizar el funcionamiento de una expresión regular de forma gráfica.
 10. [__W3Schools__](https://www.w3schools.com/): Web de tutoriales y guias para gran cantidad de lenguajes de programación y otras herramientas.
 11. [__Uiverse__](https://uiverse.io/): Web que recopila ideas y componentes con su código CSS.
+12. [__HTMLColorCodes__](https://htmlcolorcodes.com/es/tabla-de-colores/tabla-de-colores-web-seguros/): Web que recopila los llamados "colores seguros"; paletas de colores recomendadas para la creación de páginas web.

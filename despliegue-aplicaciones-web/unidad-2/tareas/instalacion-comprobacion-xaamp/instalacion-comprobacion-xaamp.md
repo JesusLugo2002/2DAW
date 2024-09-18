@@ -1,4 +1,4 @@
-# Instalación y comprobaciones de XAAMP
+# Instalación, configuración y comprobación de XAAMP
 
 <div align=justify>
 
@@ -23,6 +23,24 @@ Una vez iniciado los servidores de XAAMP, nos vamos al navegador para acceder a 
 
 <div align=center>
     <img src="./img/xaamp-dashboard.png" alt="xaamp-dashboard"/>
+</div>
+
+Y luego accediendo al apartado de __PHPMyAdmin__:
+
+<div align=center>
+    <img src="./img/phpmyadmin.png" alt="phpmyadmin"/>
+</div>
+
+Ahora para configurar primeramente la contraseña del root, ya que no es permitido este cambio a través de la interfaz web, debemos acceder al fichero de configuración __config.inc.php__ encontrado en __/opt/lampp/phpmyadmin__. En él y en sus lineas 29 y 30, donde vemos el usuario 'root' y su 'password', cambiamos la contraseña del mismo.
+
+<div align=center>
+    <img src="./img/config-file1.png" alt="changing-root-passwd"/>
+</div>
+
+Así mismo, para pedir un nombre de usuario y una contraseña para acceder al panel de PHPMyAdmin, debemos cambiar la linea 28, cuyo valor de 'auth_type' por defecto es _config_, y modificarlo a _http_.
+
+<div align=center>
+    <img src="./img/config-file2.png" alt="changing-login"/>
 </div>
 
 ## Comprobación
