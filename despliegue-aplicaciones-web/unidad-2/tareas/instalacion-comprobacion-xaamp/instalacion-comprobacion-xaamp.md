@@ -2,7 +2,33 @@
 
 <div align=justify>
 
-## Instalación
+<div align=center>
+    <img src="./img/banner.gif" alt="banner"/>
+</div>
+
+## Contenidos
+
+- [Descarga e instalación](#descarga-e-instalación)
+- [Configurando seguridad](#configurando-seguridad-del-servidor)
+- [Añadiendo un usuario](#añadiendo-un-nuevo-usuario)
+
+## Descarga e instalación
+
+Primero nos vamos a la página web donde encontramos los archivos de descarga del software para distintos sistemas operativos y descargamos el deseado:
+
+<div align=center>
+    <img src="./img/download-webpage.png" alt="download-webpage"/>
+</div>
+
+Luego con el instalador descargado, lo ejecutamos y seleccionamos posteriormente los componentes a instalar:
+
+<div align=center>
+    <img src="./img/install-step1.png" alt="install1"/>
+</div>
+
+<div align=center>
+    <img src="./img/install-step2.png" alt="install2"/>
+</div>
 
 Después de instalar el paquete de XAAMP indicado, comprobamos la instalación correcta abriendo el panel con el comando:
 ```
@@ -49,4 +75,16 @@ Ya con este cambio, cada vez que entremos al portal de PHPMyAdmin, se nos pirá 
     <img src="./img/login.png" alt="login"/>
 </div>
 
-## Comprobación
+## Añadiendo un nuevo usuario
+
+Para finalizar, entramos como usuario root y crearemos el nuevo usuario cuyos privilegios serán menores que los del root en el apartado de gestión de usuarios. Empezamos configurando el nombre y la contraseña...
+
+<div align=center>
+    <img src="./img/adding-user1.png" alt="user1"/>
+</div>
+
+Y posteriormente los privilegios que este usuario tendrá con respecto al servidor web.
+
+<div align=center>
+    <img src="./img/adding-user2.png" alt="user2"/>
+</div>
