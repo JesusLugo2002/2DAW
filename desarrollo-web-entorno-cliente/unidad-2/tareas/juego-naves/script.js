@@ -61,11 +61,110 @@ function initCanvas() {
         }
     }
 
+    function Launcher() {
+        this.x = CANVAS_WIDTH * .5
+        this.y = 500,
+        this.w = 100,
+        this.h = 100,
+        this.speed = 5
+        this.direction,
+        this.bg = "white",
+        this.missiles = [];
+
+        this.render = function() {
+            if (this.direction === 'left') {
+                this.x -= this.speed
+            } else if (this.direction === 'right') {
+                this.x += this.speed
+            } else if (this.direction === 'down') {
+                this.y += this.speed
+            } else if (this.direction === 'up') {
+                this.y -= this.speed
+            }
+
+            ctx.fillStyle = this.bg;
+            ctx.drawImage(background_img, 10, 10)
+            ctx.drawImage(player_spr, this.x, this.y, 70, 50)
+        }
+    }
+
+    var launcher = new Launcher()
+
     function animate() {
         ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+        launcher.render()
         RenderEnemies(enemies)
     }
+    
     var animateInterval = setInterval(animate, 6)
+
+    document.addEventListener('keydown', function(event){
+        if (event.key === 'ArrowLeft') {
+            launcher.direction = 'left'
+            if (launcher.x < CANVAS_WIDTH*.2) {
+                launcher.x += 0
+                launcher.direction = ''
+            }
+        }
+    })
+
+    document.addEventListener('keyup', function(event){
+        if (event.key == 'ArrowLeft') {
+            launcher.x += 0;
+            launcher.direction = ''
+        }
+    })
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowRight') {
+         launcher.direction = 'right';
+         if (launcher.x > CANVAS_WIDTH) {
+            launcher.x -= 0;
+            launcher.direction = '';
+         }
+        
+        }
+    });
+
+    document.addEventListener('keyup', function(event){
+        if (event.key == 'ArrowRight') {
+            launcher.x += 0;
+            launcher.direction = ''
+        }
+    })
+
+    document.addEventListener('keydown', function(event){
+        if(event.key === 'ArrowUp') {
+            launcher.direction = 'up';  
+            if (launcher.y < CANVAS_HEIGHT*.2) {
+                launcher.y += 0;
+                launcher.direction = '';
+           }
+        }
+   });
+
+   document.addEventListener('keyup', function(event){
+        if (event.key === 'ArrowUp') {
+            launcher.y -= 0;
+            launcher.direction = '';
+        }
+   });
+
+   document.addEventListener('keydown', function(event){
+        if(event.key === 'ArrowDown') {
+            launcher.direction = 'down';  
+            if (launcher.y > CANVAS_HEIGHT){
+                launcher.y -= 0;
+                launcher.direction = '';
+          }
+        }
+   });
+   document.addEventListener('keyup', function(event){
+        if (event.key === 'ArrowDown') {
+            launcher.y += 0;
+            launcher.direction = '';
+        }
+   });
 }
 
 window.addEventListener('load', function(event) {

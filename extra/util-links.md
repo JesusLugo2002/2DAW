@@ -12,3 +12,4 @@
 10. [__W3Schools__](https://www.w3schools.com/): Web de tutoriales y guias para gran cantidad de lenguajes de programación y otras herramientas.
 11. [__Uiverse__](https://uiverse.io/): Web que recopila ideas y componentes con su código CSS.
 12. [__HTMLColorCodes__](https://htmlcolorcodes.com/es/tabla-de-colores/tabla-de-colores-web-seguros/): Web que recopila los llamados "colores seguros"; paletas de colores recomendadas para la creación de páginas web.
+13. [__KeyCode.info__](keycode.info): Herramienta para consultar el código o referencias de cierta tecla del teclado para JavaScript.
