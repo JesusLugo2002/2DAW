@@ -4,6 +4,10 @@ Esta actividad está pensada para prácticar los distintos métodos para pasar i
 
 ## Contenido
 - [Diferencias entre GET y POST](#diferencias-entre-get-y-post)
+- [Ejemplo realizado en clase](#ejemplo-realizado-en-clase)
+        - [Creación del formulario](#creación-del-formulario)
+        - [Creación del get_post.php](#creación-del-get_postphp)
+- [Envío de información entre ficheros PHP](#envío-de-información-entre-ficheros-php)
 
 ## Diferencias entre GET y POST
 
@@ -52,3 +56,5 @@ Mirando el video de Webinar proporcionado, hemos realizado un formulario sencill
 ```
 
 Con este código, hemos creado un formulario funcional en el que podemos pasar información al servidor mediante el fichero PHP.
+
+## Envío de información entre ficheros PHP
