@@ -1,0 +1,84 @@
+body {
+    background: #3466AF;
+}
+
+.header {
+    /*font-family: DejaVu Sans Mono, monospace;
+    color: white;*/
+    text-align: center;
+}
+
+.logo {
+    width: 600px; 
+    height: 200px;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: #ff0000;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: DejaVu Sans Mono, monospace;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Pokedex */
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px 10px;
+    width: 100%;
+}
+
+.card {
+    font-family: DejaVu Sans Mono, monospace;
+    border: 2px solid rgb(78, 78, 78);
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(88, 88, 88), rgb(255, 255, 255));
+    text-align: center;
+}
+
+.card:hover img {
+    display:none;
+}
+.card .front {
+    display:none;
+}
+.card:hover .front {
+    display: inline-block;
+    animation: resizePokemon 1s infinite;
+}
+
+@keyframes resizePokemon {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+/* @keyframes resizePokemon {
+    0% { transform: scale(1)}
+    100% { transform: scale(1.2)}
+} */
+
+.measures {
+    border: 1px solid orange;
+    font: bold;
+    background-image: linear-gradient(rgb(248, 247, 169), orange);
+}
+
+.types {
+    border: 1px solid rgb(255, 217, 0);
+    font: bold;
+    background-image: linear-gradient(rgb(248, 247, 169), rgb(255, 238, 0));
+}
