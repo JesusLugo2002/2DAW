@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.cover {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+}
+
+.cv1 {
+    background-image: none;
+}
+
+.cv2 {
+    background-image: none;
+}
+
+.cv3 {
+    background-image: none;
+}
+
+/*# sourceMappingURL=/style.78032849.css.map */
