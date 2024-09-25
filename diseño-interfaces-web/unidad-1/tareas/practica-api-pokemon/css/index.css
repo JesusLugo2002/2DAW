@@ -48,6 +48,11 @@ body {
     border-radius: 5px;
     background-image: linear-gradient(rgb(88, 88, 88), rgb(255, 255, 255));
     text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.2);
 }
 
 .card:hover img {
