@@ -4,57 +4,52 @@ Esta actividad está pensada para prácticar los distintos métodos para pasar i
 
 ## Contenido
 - [Diferencias entre GET y POST](#diferencias-entre-get-y-post)
-- [Ejemplo realizado en clase](#ejemplo-realizado-en-clase)
-        - [Creación del formulario](#creación-del-formulario)
-        - [Creación del get_post.php](#creación-del-get_postphp)
+        - [¿Cuándo usar GET](#cuándo-usar-get)
+        - [¿Cuándo usar POST](#cuándo-usar-post)
 - [Envío de información entre ficheros PHP](#envío-de-información-entre-ficheros-php)
 
 ## Diferencias entre GET y POST
 
-La principal diferencia entre ambos métodos es el destinatario en la transmisión de datos: __el método GET se usa para recibirlos por parte del servidor, como en consultas, mientras que el método POST se usa para enviarlos, como en formularios de registro__.
+Ambos métodos sirven para transferir información en formatos de _arrays_ entre ficheros. Estos _arrays_ contienen parejas de clave y valor que contienen los datos como nombres y valores obtenidos de formularios rellenados por el usuario. La principal diferencia entre ambos métodos es la forma en la que se transfiere la información: __con GET transferimos los datos a través de la URL mientras que con POST lo hacemos a través del método HTTP__.
 
-## Ejemplo realizado en clase
+### ¿Cuándo usar GET?
 
-Mirando el video de Webinar proporcionado, hemos realizado un formulario sencillo para enviar un nombre utilizando el método POST.
+La información enviada con GET es __visible para todos__ a través de la URL, además de que la cantidad de información es limitada a 2000 caracteres. Sin embargo, al aparecer la información en URL, esta puede ser _guardada_ como _bookmark_ y puede resultar útil en muchos casos como en la optimización del SEO. El método GET __NUNCA debería ser usado para información confidencial__ como contraseñas.
 
-### Creación del formulario
+### ¿Cuándo usar POST?
+
+La información enviada con POST es __invisible para todos__ y no tiene límites en cuanto a la cantidad de datos; además el método POST a menudo ofrece funcionalidades avanzadas relacionadas con la subida de ficheros externos. Sin embargo, la información como variables no son mostradas en el URL por lo que no pueden ser guardadas como _bookmark_. Este método es el más recomendado para crear formularios por su seguridad.
+
+## Ejemplo con GET
+
+A continuación se mostrará un formulario simple en HTML en el que se pedirá nombre y edad de una persona y se mostraría con PHP posteriormente.
+
+### Formulario en HTML
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="get_post.php" method="post">
-        Nombre: <input type="text" name="user">
-        <br>
-        <input type="submit" name="Enviar" value="Enviar">
-    </form>
-</body>
+<html>
+        <body>
+                <h3>Formulario con método GET</h3>
+                <form action="get.php" method="GET">
+                        Nombre: <input type="text" name="name"><br>
+                        Edad: <input type="number" name="age"><br>
+                        <input type="submit" value="Enviar">
+                </form>
+        </body>
 </html>
 ```
 
-### Creación del get_post.php
+### Código procesador en PHP
 
 ```php
-<?php
-    /* Método GET
-    echo "<pre>";
-    print_r($_GET);
-    echo "<br>";
-    print_r($_GET['user']); */
-
-    // Método POST
-    echo "<pre>";
-    print_r($_POST);
-    echo "<br>";
-    print_r($_POST['user']);
-?>
+<html>
+        <body>
+                Bienvenido <?php echo $_GET["name"]; ?><br>
+                Tienes <?php echo $_GET["age"]; ?> años.
+        </body>
+</html>
 ```
 
-Con este código, hemos creado un formulario funcional en el que podemos pasar información al servidor mediante el fichero PHP.
+## Ejemplo con POST
 
 ## Envío de información entre ficheros PHP
