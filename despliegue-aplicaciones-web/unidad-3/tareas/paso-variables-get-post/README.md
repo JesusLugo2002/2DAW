@@ -1,5 +1,11 @@
 # Método de Paso de Variables de formularios. GET y POST
 
+<div align=justify>
+
+<div align=center>
+        <img src="./img/cover.png" alt="cover">
+</div>
+
 Esta actividad está pensada para prácticar los distintos métodos para pasar información en PHP y HTML; el método __GET__ y el método __POST__.
 
 ## Contenido
@@ -96,4 +102,6 @@ Podemos ver cómo se nos abre una página con el resultado. En este caso, la inf
 
 <div align=center>
         <img src="./img/result_post.png" alt="post">
+</div>
+
 </div>
