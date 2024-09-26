@@ -3,7 +3,7 @@
 <div align=justify>
 
 <div align=center>
-        <img src="./img/cover.png" alt="cover">
+        <img src="./img/cover.png" alt="cover" width="50%">
 </div>
 
 Esta actividad está pensada para prácticar los distintos métodos para pasar información en PHP y HTML; el método __GET__ y el método __POST__.
