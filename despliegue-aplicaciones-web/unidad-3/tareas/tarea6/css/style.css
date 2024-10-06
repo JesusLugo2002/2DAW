@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+main div {
+    text-align: center;
+}
+
+#result-table {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+td, th {
+    padding: 5px;
+}
+
+#update-form, #delete-form, #insert-form {
+    display: none;
+}
+
+#form-container {
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
