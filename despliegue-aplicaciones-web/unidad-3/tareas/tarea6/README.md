@@ -1,5 +1,9 @@
 # Interfaces de operaciones SQL
 
+<div align=center>
+    <img src="./img/cover.png">
+</div>
+
 <div align=justify>
 
 ## Contenidos
