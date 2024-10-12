@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 01</title>
-    <style>
-        .highlight {
-            background-color: goldenrod;
-        }
-    </style>
 </head>
 <body>
     <h1>Personajes de El Señor de los Anillos</h1>
@@ -23,12 +18,8 @@
         <li>Pippin</li>
         <li>Gollum</li>
     </ul>
-    <button onclick="highlightFrodo()">Encontrar el Anillo</button>
+    <button id="find-button">Encontrar el Anillo</button>
 
-    <script>
-        function highlightFrodo() {
-            document.getElementById('frodo').classList.add('highlight');
-        }
-    </script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
