@@ -25,7 +25,7 @@ touch index.html
 #### Añadir la estructura básica de una web.
 
 <div align=center>
-    <img src="basic-structure.png">
+    <img src="./img/basic-structure.png">
 </div>
 
 #### Crear un commit indicando que se crea el esqueleto básico del index.html
