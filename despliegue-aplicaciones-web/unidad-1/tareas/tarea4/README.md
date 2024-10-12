@@ -1,5 +1,9 @@
 # Trabajando con Git y Markdown 3
 
+<div align=center>
+    <img src="./img/cover.jpeg">
+</div>
+
 #### Creo un directorio de trabajo llamado /bloggalpon/ en el directorio del usuario.
 
 ```sh
