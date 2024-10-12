@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+main {
+    padding: 10vh 0px;
+    display: flex;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 30%;
+}
+
+aside img {
+    width: 30%;
+}
+
+section {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+article {
+    border: 1px dashed black; /* Novedad */
+    margin: 10px;
+    align-items: center;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+}
+
+article img {
+    width: 10vw;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: gainsboro;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.5s;
+    border: 1px dashed black; /* Novedad */
+}
+
+
+footer:hover { 
+    background-color: rgb(163, 163, 163);
+}
+
+h1 {
+    color: goldenrod;
+}
+
+a {
+    text-decoration: none;
+    color: lightcoral;
+}
+
+a:hover {
+    color: lightblue;
+}
