@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01</title>
+    <style>
+        .highlight {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personajes de El Señor de los Anillos</h1>
+    <ul>
+        <li>Aragorn</li>
+        <li>Gandalf</li>
+        <li>Legolas</li>
+        <li id="frodo">Frodo Bolsón</li>
+        <li>Gimli</li>
+        <li>Sam</li>
+        <li>Merry</li>
+        <li>Pippin</li>
+        <li>Gollum</li>
+    </ul>
+    <button onclick="highlightFrodo()">Encontrar el Anillo</button>
+
+    <script>
+        function highlightFrodo() {
+            document.getElementById('frodo').classList.add('highlight');
+        }
+    </script>
+</body>
+</html>
