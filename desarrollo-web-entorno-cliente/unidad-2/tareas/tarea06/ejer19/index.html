@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19</title>
+    <style>
+        main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10vw;
+        }
+        img {
+            width: 10vw;
+            height: 10vw;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="title">Elige un anillo...</h1>
+        <div id="container">
+            <img src="img/gandalf.webp" alt="gandalf">
+            <img src="img/sauron.png" alt="sauron">
+            <img id="frodo" src="img/frodo.JPG" alt="frodo">
+        </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
