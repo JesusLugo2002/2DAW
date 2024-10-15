@@ -1,7 +1,27 @@
-const button = document.getElementById("button")
-const img = document.getElementsByTagName("img")[0]
+const heroSelector = document.getElementById("hero-selector")
+const text = document.getElementById("result-text")
 
-button.addEventListener("click", function(e) {
-    img.style.visibility = img.style.visibility == "hidden" ? "visible" : "hidden";
-    button.innerHTML = img.style.visibility == "hidden" ? "Llamar a Batman!" : "Despedir a Batman!"
+heroSelector.addEventListener("change", function(e) {
+    switch (heroSelector.value) {
+        case "spiderman":
+            text.textContent = "Spiderman has his spider web!"
+            break;
+        case "ironman":
+            text.textContent = "Ironman has his advanced technology!"
+            break;
+        case "hulk":
+            text.textContent = "Hulk has his super strength and lettuce color skin!"
+            break;
+        case "captain-america":
+            text.textContent = "Captain America has his shield"
+            break;
+        case "dr-strange":
+            text.textContent = "Doctor Strange has his infinity stone!"
+            break;
+        case "black-widow":
+            text.textContent = "Black Widows has her speed"
+            break;
+        default:
+            break;
+    }
 });

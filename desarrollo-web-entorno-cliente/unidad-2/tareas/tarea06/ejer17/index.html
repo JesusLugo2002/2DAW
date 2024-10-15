@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jesus Lugo">
+    <title>Ejercicio 17</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+        .mission {
+            list-style-type: none;
+            cursor: pointer;
+        }
+        .mission:hover {
+            color: lightskyblue;
+        }
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Missions (click to complete!)</h1>
+        <ul>
+            <li class="mission">Find a lost cat!</li>
+            <li class="mission">Recover infinity stones!</li>
+            <li class="mission">Save the world!</li>
+            <li class="mission">Buy baguette!</li>
+            <li class="mission">Help a granny cross the road!</li>
+        </ul>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

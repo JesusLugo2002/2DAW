@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jesus Lugo">
-    <title>Ejercicio 20</title>
+    <title>Ejercicio 18</title>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        
         main {
-            position: absolute;
-            top: 50%;
-            left: 50%;
             text-align: center;
-            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
     <main>
-        <button id="battle-button">Iniciar batalla</button>
-        <h1 id="result-container"></h1>
+        <h1>I'm the Joker and my plan is to <span id="plan-text"></span></h1>
+        <button id="button">Think...</button>
     </main>
     <script type="module" src="script.js"></script>
 </body>
