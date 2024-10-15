@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 09</title>
+</head>
+<body>
+    <img id="shield" src="./img/shield.png" alt="shield" width="300" style="transition: 0.3s; position: absolute; left: 0px;">
+
+    <script>
+        const shield = document.getElementById("shield");
+        shield.addEventListener("click", () => {
+            setInterval(function() {
+                let previousValue = shield.style.left.split("px")[0]
+                shield.style.left = (parseInt(previousValue) + 20) + "px";
+            }, 1000)
+        })
+    </script>
+</body>
+</html>
