@@ -13,3 +13,8 @@
 11. [__Uiverse__](https://uiverse.io/): Web que recopila ideas y componentes con su código CSS.
 12. [__HTMLColorCodes__](https://htmlcolorcodes.com/es/tabla-de-colores/tabla-de-colores-web-seguros/): Web que recopila los llamados "colores seguros"; paletas de colores recomendadas para la creación de páginas web.
 13. [__KeyCode.info__](keycode.info): Herramienta para consultar el código o referencias de cierta tecla del teclado para JavaScript.
+14. [__Figma__](www.figma.com): Herramienta web para el diseño de gráficos vectorial y generación de prototipos.
+15. [__Balsamiq__](https://balsamiq.com/): Herramienta web para el wireframing de diseño de aplicaciones web.
+16. [__Adobe Color__](https://color.adobe.com/es/): Herramienta web para generar paletas de colores y extraer paletas a partir de imágenes de referencia.
+17. [__JustInMind__](www.justinmind.com): Herramienta web para el diseño de prototipos web.
+18. [__Moqups__](https://moqups.com/es/): Herramienta web para la creación de esquemas, wireframes y diagramas del diseño web.
