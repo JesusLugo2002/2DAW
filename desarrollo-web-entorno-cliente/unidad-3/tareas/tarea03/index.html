@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JQery - Formularios</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            h3 {color:blue;}
+            form {border: 1px solid black; padding: 10px;}
+        </style>
+    <link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.css"/><script  type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cauce_cookie.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-base.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-eforma.js"></script></head>
+    <body>
+        <h2>Ejercicio de formularios con jquery</h2>
+        <p>Luke Skywalker está entrenando a nuevos jedis en su academia secreta
+            en Ahch-To, y para asegurarse de que todo va bien con los nuevos
+            padawans, les ha encargado tres tareas importantes: configurar sus
+            sables de luz, elegir su rol en la misión secreta, y finalmente
+            enviar
+            su informe de estado al consejo jedi. <br>Cada formulario te ayudará
+            a
+            completar estas tareas mientras usas los selectores jQuery.</p>
+
+        <p>NOTA: recuerda hacer uso de event.preventDefault();</p>
+
+        <h3>Formulario 1: Configurar tu sable de luz</h3>
+        <p>Aquí, los padawans deben configurar el color y tipo de su sable, y
+            subir una imagen de su diseño.</p>
+        <p>Tarea</p>
+        <ol>
+            <li>Seleccionar todos los elementos de entrada y mostralos por
+                consola.</li>
+            <li>Seleccionar el color del sable (input type="text") y mostrar por
+                consola "Color seleccionado:" y el color.</li>
+            <li>Seleccionar el archivo de imagen (input type="file") y mostrar
+                por consola "Archivo seleccionado:" y el nombre del
+                archivo.</li>
+            <li>Botón de submit: saca mensaje por consola
+                "Sable guardado!".</li>
+            <li>Botón de reset: sacar mensaje por consola
+                "Formulario restablecido"</li>
+        </ol>
+
+        <form id="lightsaber-form">
+            <h2>Configura tu sable de luz</h2>
+            <label for="saber-color">Color del sable:</label>
+            <input type="text" id="saber-color" name="color"><br><br>
+
+            <label for="saber-type">Tipo de sable:</label>
+            <select id="saber-type">
+                <option value="single">Sable simple</option>
+                <option value="double">Sable doble</option>
+                <option value="crossguard">Sable con empuñadura cruzada</option>
+            </select><br><br>
+
+            <label for="saber-image">Sube una imagen de tu sable:</label>
+            <input type="file" id="saber-image"><br><br>
+
+            <input type="submit" value="Guardar sable">
+            <input type="reset" value="Restablecer formulario">
+        </form>
+
+        <h3>Formulario 2: Elegir tu rol en la misión</h3>
+        <p>Cada padawan debe elegir un rol específico en la misión secreta y
+            declarar su afiliación a la Fuerza.</p>
+        <p>Tarea</p>
+        <ol>
+            <li>Seleccionar radio buttons (afiliación a la Fuerza) y sacar por
+                consola "Afiliación a la Fuerza:" y el seleccionado.</li>
+            <li>Seleccionar checkbox (roles de la misión) y mostrar por consola
+                "Rol seleccionado:" y el rol seleccionado</li>
+            <li>Botón para asignar rol: saca por consola "Roles asignados:" y el
+                listado</li>
+
+        </ol>
+
+        <form id="mission-role-form">
+            <h2>Elige tu rol en la misión secreta</h2>
+            <label for="padawan-name">Nombre de Padawan:</label>
+            <input type="text" id="padawan-name"><br><br>
+
+            <label for="force-side">Elige tu afiliación a la Fuerza:</label>
+            <input type="radio" name="force-side" value="light"> Lado luminoso
+            <input type="radio" name="force-side" value="dark"> Lado
+            oscuro<br><br>
+
+            <label>Selecciona tu rol:</label><br>
+            <input type="checkbox" id="scout" name="role" value="scout">
+            Explorador<br>
+            <input type="checkbox" id="warrior" name="role" value="warrior">
+            Guerrero<br>
+            <input type="checkbox" id="healer" name="role" value="healer">
+            Sanador<br><br>
+
+            <button type="button" id="assign-role">Asignar rol</button>
+        </form>
+
+        <h3>Formulario 3: Informe de estado al consejo Jedi</h3>
+        <p>Los padawans deben enviar su estado actual y confirmar si han
+            completado su entrenamiento.</p>
+        <p>Tarea</p>
+        <ol>
+            <li>Seleccionar textarea (contenido del informe) y sacar por consola
+                "Informe actualizado:" y el informe.</li>
+            <li>Seleccionar checkbox de entrenamiento completado y mostrar por
+                consola si el entrenamiento está completo o pendiente-</li>
+            <li>Botón de submit del informe. Muestra por consola
+                "Informe enviado"</li>
+        </ol>
+
+        <form id="status-report-form">
+            <h2>Informe de estado al consejo Jedi</h2>
+            <label for="report-content">Contenido del informe:</label>
+            <textarea id="report-content"></textarea><br><br>
+
+            <label for="completed-training">¿Has completado tu
+                entrenamiento?</label>
+            <input type="checkbox" id="completed-training"><br><br>
+
+            <input type="submit" value="Enviar informe">
+        </form>
+
+        <script>
+            $(document).ready(function() {
+           // Formulario 1: Configura tu sable de luz
+                // Seleccionar todos los elementos de entrada
+                console.log($("#lightsaber-form :input"));
+                
+                // Seleccionar el color del sable (input type="text")
+                $("#saber-color").on("input", function() {
+                    console.log("Color del sable seleccionado: " + $(this).val());
+                });
+
+                // Seleccionar el archivo de imagen (input type="file")
+                $("#saber-image").on("input", function() {
+                    console.log("Archivo seleccionado: " + $(this).val().split("\\").pop());
+                });
+
+                // Botón de submit
+                $("#lightsaber-form :input[type='submit']").click(function() {
+                    console.log("Sable guardado!");
+                });
+ 
+                // Botón de reset
+                $("#lightsaber-form :input[type='reset']").click(function() {
+                    console.log("Formulario restablecido");
+                });
+
+            // Formulario 2: Elegir tu rol en la misión
+                // Seleccionar radio buttons (afiliación a la Fuerza)
+                $("[name='force-side']").change(function() {
+                    console.log("Lado seleccionado: ", $(this).html())
+                });
+
+                // Seleccionar checkbox (roles de la misión)
+                $("[name='role']").change(function() {
+                    if ($(this).prop("checked") == true) {
+                        console.log("Rol seleccionado: ", $(this).val())
+                    } else {
+                        console.log("Rol removido: ", $(this).val())
+                    }
+                });
+
+                // Botón para asignar rol
+                $("#assign-role").click(function() {
+                    console.log("Roles asignados:")
+                    for (let role of $(":checked[name='role']")) {
+                        console.log("- ", $(role).val())
+                    }
+                });
+
+            // Formulario 3: Informe de estado
+                // Seleccionar textarea (contenido del informe)
+       
+
+                // Seleccionar checkbox de entrenamiento completado
+ 
+
+                // Botón de submit del informe
+   
+            });
+      </script>
+    </body>
+</html>

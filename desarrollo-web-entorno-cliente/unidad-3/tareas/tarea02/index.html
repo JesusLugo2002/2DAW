@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jesus Lugo">
+        <title>Ejercicios de JQuery</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .caja {
+                width: auto; height: auto; border: 1px solid black; padding: 10px;
+            }
+        </style>
+    <link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.css"/><script  type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cauce_cookie.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-base.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-eforma.js"></script></head>
+    <body>
+        <h2>Ejercicio 1</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("ul li:first").<br>
+            Selecciona el primer elemento de una lista y cambia su color de
+            fondo a azul.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <ul id="e1">
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ul>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 2</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("ul li:last")<br>
+            Selecciona el último elemento de una lista y cambia su texto a
+            "Soy el último".
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <ul id="e2">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 3</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("ul li:even")<br>
+            Selecciona todos los elementos con índice par de una lista y cambia
+            su color de fondo a gris.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <ul id="e3">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 4</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("ul li:odd").<br>
+            Selecciona todos los elementos de índice impar de una lista y
+            ocúltalos.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <ul id="e4">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 5</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("ul li:eq(2)")<br>
+            Selecciona el tercer elemento (índice 2) de una lista y cámbiale el
+            texto a "Soy el tercero".
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <ul id="e5">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 6</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("input:gt(1)")<br>
+            Selecciona todos los elementos con índice mayor que 1 y
+            deshabilítalos (si son inputs).
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <input type="text" value="Input 1">
+            <input type="text" value="Input 2">
+            <input type="text" value="Input 3">
+            <input type="text" value="Input 4">
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 7</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $(":contains('especial')").<br>
+            Selecciona todos los elementos que contienen el texto "especial" y
+            cambia su color a rojo.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <div id="e7">
+                <p>Texto normal</p>
+                <p>Texto especial</p>
+                <p>Otro texto</p>
+            </div>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 8</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $(":parent")<br>
+            Selecciona todos los elementos que tienen hijos y cámbiales el borde
+            a uno sólido negro de 2px.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <div id="e8">
+                <div>
+                    <p>Hijo dentro de un div</p>
+                </div>
+                <p>Sin hijos</p>
+            </div>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 9</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $(":empty")<br>
+            Selecciona los elementos que no tienen hijos (vacíos) y cámbiales el
+            fondo a amarillo.
+            NOTA: empty en algunos navegadores no funciona, como Chrome
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <div id="e9">
+                <div>
+                    <p>Texto</p>
+                </div>
+                <div style="width: 100%; height: 20px;"></div> <!-- Div vacío -->
+            </div>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 10</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $(":hidden")<br>
+            Selecciona todos los elementos ocultos y muéstralos.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <div id="e10">
+                <p>Este es un párrafo visible.</p>
+                <p style="display: none;">Este es un párrafo oculto que será
+                    mostrado.</p>
+                <div style="display: none;">Este es un div oculto que será
+                    mostrado.</div>
+            </div>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <script>
+            $(document).ready(function(){
+			
+     			// Añade aquí las soluciones
+				// Mira que cada div tiene un id para que lo recuperes con jquery
+				// y apliques la solución en ese div.
+			
+
+				// Solución del Ejercicio 1
+                $("#e1 li:first").css("background-color", "blue")
+				
+				// Solución del Ejercicio 2
+                $("#e2 li:last").text("Soy el último")
+				
+				// Solución del Ejercicio 3
+                $("#e3 li:even").css("background-color", "gray")
+				
+				// Solución del Ejercicio 4
+                $("#e4 li:odd").hide()
+				
+				// Solución del Ejercicio 5
+                $("#e5 li:eq(2)").text("Soy el tercero")
+				
+				// Solución del Ejercicio 6
+                $("input:gt(1)").prop("disabled", true)
+				
+				// Solución del Ejercicio 7
+                $("#e7 :contains('especial')").css("color", "red")
+				
+				// Solución del Ejercicio 8
+                $("#e8 :parent").css("border", "2px solid black")
+				
+				// Solución del Ejercicio 9
+                $("#e9 :empty").css("background-color", "yellow")
+				
+				// Solución del Ejercicio 10
+                $("#e10 :hidden").show()
+            });
+        </script>
+    </body>
+</html>

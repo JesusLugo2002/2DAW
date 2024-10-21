@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jesus Lugo">
+        <title>Ejercicios de JQuery</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .caja {
+                width: auto; height: 100px; border: 1px solid black; padding: 10px;
+            }
+        </style>
+    <link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.css"/><script  type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cauce_cookie.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-base.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-eforma.js"></script></head>
+    <body>
+        <h2>Ejercicio 1</h2>
+        <h4>Enunciado</h4>
+        <p> Selectores a trabajar: $(".miClase").<br>
+            Selecciona todos los elementos con la clase miClase y cambia su
+            color de texto a rojo.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <p class="miClase">Texto con clase miClase</p>
+            <p class="miClase">Otro texto con clase miClase</p>
+            <p>Texto sin clase miClase</p>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 2</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("[data-info='importante']").<br>
+            Selecciona todos los elementos con el atributo data-info
+            que tienen un valor de importante y cambia su fondo a amarillo.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <p data-info="importante">Texto importante</p>
+            <p data-info="normal">Texto normal</p>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 3</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("#miElemento").<br>
+            Selecciona el elemento con el ID principal y cambia su
+            texto a "Soy el principal".
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <p id="principal">Texto inicial</p>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 4</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("[name^='user']").<br>
+            Selecciona todos los elementos con el atributo name cuyo
+            valor comience con "user" y cámbiales el borde a uno de 2px sólido
+            azul.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <input type="text" name="user1" value="Usuario 1">
+            <input type="text" name="usuario2" value="Usuario 2">
+            <input type="text" name="user3" value="Usuario 3">
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 5</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("*").<br>
+            Selecciona todos los elementos del documento y cambia su
+            fuente a "Arial".
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <h1>Título</h1>
+            <p>Este es un párrafo</p>
+            <div>Este es un div</div>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 6</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("[type!='text']").<br>
+            Selecciona todos los elementos input que tienen el
+            atributo type diferente de text y deshabilítalos.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <input type="text" value="Texto">
+            <input type="button" value="Botón">
+            <input type="radio" name="opcion" value="op1"> Opción 1
+            <input type="checkbox" name="check" value="si"> Check
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 7</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("[data-type*='especial']").<br>
+            Selecciona todos los párrafos cuyo atributo data-type
+            contenga la palabra "especial" y ocúltalos.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <p data-type="especial">Este es un párrafo especial</p>
+            <p data-type="normal">Este es un párrafo normal</p>
+            <p data-type="muy-especial">Este es un párrafo muy especial</p>
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <!-- ***************************************************************** -->
+        <h2>Ejercicio 8</h2>
+        <h4>Enunciado</h4>
+        <p>Selectores a trabajar: $("[name$='3']").<br>
+            Selecciona todos los elementos que tienen el atributo name que
+            termina con "3" y cámbiales el color de fondo a verde.
+        </p>
+        <h4>Resultado</h4>
+        <div class="caja">
+            <input type="text" name="item1" value="Item 1">
+            <input type="text" name="item2" value="Item 2">
+            <input type="text" name="item3" value="Item 3">
+        </div>
+        <br><hr style="border: 1px solid red"><br>
+
+        <script>    
+            $(document).ready(function() {
+                // Solucion ejercicio 1
+                $(".miClase").css("color", "red")
+
+                // Solucion ejercicio 2
+                $("[data-info='importante']").css("background-color", "yellow")
+
+                // Solucion ejercicio 3
+                $("#principal").text("Soy el principal")
+
+                // Solucion ejercicio 4
+                $("[name^='user']").css("border", "2px solid blue")
+
+                // Solucion ejercicio 5
+                $("*").css("font-family", "arial")
+
+                // Solucion ejercicio 6
+                $("input[type!='text']").prop("disabled", true)
+
+                // Solucion ejercicio 7
+                $("p[data-type*='especial']").hide()
+
+                // Solucion ejercicio 8
+                $("[name$='3']").css("background-color", "lightgreen")
+            });
+        </script>
+
+    </body>
+</html>

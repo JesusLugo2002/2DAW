@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jesus Lugo">
+    <title>Práctica jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="test">
+        <h1>Hola</h1>
+    </div>
+
+    <p>Hola puto</p>
+    <button>Presiona esta mondá</button>
+
+    <div >
+        <h2 id="item">Soy un subtítulo 🫦</h2>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".test").hide()
+            $("#item").hide()
+            $("button").click(function() {
+                $("p").hide()
+                $("#item").show()
+            })
+
+            console.log($("#item").html())
+        })
+    </script>
+</body>
+</html>
