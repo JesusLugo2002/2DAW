@@ -171,13 +171,23 @@
 
             // Formulario 3: Informe de estado
                 // Seleccionar textarea (contenido del informe)
-       
+                $("#report-content").on("input", function() {
+                    console.log("Informe actualizado: ", $(this).val())
+                })
 
                 // Seleccionar checkbox de entrenamiento completado
- 
+                $("#completed-training").change(function() {
+                    if ($(this).is(":checked")) {
+                        console.log("Entrenamiento completado")
+                    } else {
+                        console.log("Entrenamiento pendiente")
+                    }
+                });
 
                 // Botón de submit del informe
-   
+                $("#status-report-form [type='submit']").click(function() {
+                    console.log("Informe enviado!")
+                })
             });
       </script>
     </body>
