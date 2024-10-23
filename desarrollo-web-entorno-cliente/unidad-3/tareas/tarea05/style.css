@@ -26,6 +26,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: #a02f2f;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
