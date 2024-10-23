@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicios e JQuery</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h3>"La Resistencia de los Autobots"</h3>
+        <p>En un futuro distante, los Autobots están enfrentando su mayor
+            desafío. Los Decepticons han tomado control de la Ciudad Principal
+            de Cybertron y han sellado sus puertas. Optimus Prime, líder de los
+            Autobots, ha creado una lista de tareas crítica que debe completarse
+            para liberar la ciudad. Cada Autobot tiene una misión especial que
+            realizar, y tú, como el comandante de la resistencia, tienes la
+            responsabilidad de agregar o eliminar misiones de la lista a medida
+            que las circunstancias cambien.
+
+            Tu tarea es ayudar a los Autobots a liberar la ciudad.</p>
+
+        <h2>Funcionalidades de la Lista de Tareas:</h2>
+        <ol>
+            <li>Agregar una misión: Cuando un nuevo objetivo aparece, se debe
+                agregar a la lista de tareas.</li>
+            <li>La tarea debe tener el nombre y dos botones: editar y
+                eliminar. El botón editar abrirá un modal para editar el
+                nombre.</li>
+            <li>Eliminar una misión: Si un Autobot completa su tarea, puedes
+                eliminarla de la lista.</li>
+            <li>Actualizar la misión: A veces los planes cambian, y hay que
+                actualizar alguna misión.</li>
+            <li>Limpiar la lista: Al finalizar la operación, puedes borrar todas
+                las misiones completadas.</li>
+        </ol>
+        <h1>Lista de Tareas: Resistencia de los Autobots</h1>
+        <input type="text" id="nueva-tarea"
+            placeholder="Agregar nueva misión...">
+        <button id="agregar-tarea">Agregar Misión</button>
+
+        <ul id="lista-tareas">
+            <!-- Las misiones aparecerán aquí -->
+        </ul>
+
+        <button id="limpiar-tareas">Limpiar Misiones Completadas</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>

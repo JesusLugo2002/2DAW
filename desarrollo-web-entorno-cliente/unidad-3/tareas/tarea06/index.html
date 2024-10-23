@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicios de Terror con jQuery</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            body { font-family: Arial, sans-serif; background-color: #222; color: #f4f4f4; }
+            h2 { color: #ff5555; }
+            button, input, select { margin: 10px 0; padding: 10px; }
+            p, img { margin: 10px 0; }
+        </style>
+    </head>
+    <body>
+        <h1>La Maldición del Bosque Oscuro</h1>
+        <p>Un grupo de exploradores se adentra en el Bosque Oscuro, un lugar que
+            ha sido evitado por generaciones debido a las aterradoras leyendas
+            que lo rodean. Según la historia, quien entre al bosque se
+            encontrará atrapado en una maldición ancestral. En su lucha por
+            sobrevivir, los exploradores deben resolver una serie de acertijos
+            para salir con vida antes de que el bosque los reclame para
+            siempre.</p>
+
+        <h2>Ejercicio 1: La Puerta del Bosque (Evento .click())</h2>
+        <p>Enunciado:<br> Al hacer clic en el botón "Entrar al Bosque", aparece
+            un mensaje de advertencia en el que se advierte sobre la maldición.
+            Si hacen clic en el botón "Atrás", regresan a la seguridad.</p>
+        <p>Resultado esperado:<br> Al hacer clic en "Entrar al Bosque", se
+            muestra el mensaje de advertencia. Si se hace clic en "Atrás",
+            se oculta el mensaje y vuelve el estado original.</p>
+
+        <button id="entrar">Entrar al Bosque</button>
+        <button id="atras" style="display:none;">Atrás</button>
+        <p id="mensaje" style="display:none;">¡Advertencia! El bosque está
+            maldito.</p>
+
+        <h2>Ejercicio 2: El Reflejo en el Agua (Evento .dblclick())</h2>
+        <p>Enunciado:<br> Haz doble clic en el espejo de agua para revelar el
+            reflejo del espíritu atrapado en el lago.</p>
+        <p>Resultado esperado:<br> Al hacer doble clic en el texto, aparece el
+            reflejo del espíritu.</p>
+
+        <p id="agua">Mira tu reflejo en el agua...</p>
+
+        <h2>Ejercicio 3: Sombras Sigilosas (Evento .hover())</h2>
+        <p>Enunciado:<br> Al pasar el mouse sobre la descripción de las sombras,
+            cambia su color a un tono más oscuro para mostrar que están cerca.
+            Cuando mueves el ratón fuera, vuelve a su estado normal.</p>
+        <p>Resultado esperado:<br> El texto cambia de color cuando se pasa el
+            mouse por encima y regresa a su color original cuando se quita.</p>
+
+        <p id="sombras">Cuidado, las sombras se acercan...</p>
+
+        <h2>Ejercicio 4: El Ojo Vigilante (Eventos .focus() y .blur())</h2>
+        <p>Enunciado:<br> Al enfocar el campo de texto, el ojo vigilante se
+            abre. Al desenfocarlo, el ojo se cierra.</p>
+        <p>Resultado esperado:<br> La imagen del ojo cambia según el estado de
+            enfoque del input.</p>
+
+        <input type="text" id="ojo">
+        <img id="ojo-img" src="./img/ojo-cerrado.jpg" alt="Ojo cerrado">
+
+        <h2>Ejercicio 5: El Bosque Cambiante (Evento .change())</h2>
+        <p>Enunciado:<br> Selecciona una opción para ver cómo el paisaje del
+            bosque cambia entre día y noche.</p>
+        <p>Resultado esperado:<br> Dependiendo de la selección en el campo, la
+            imagen del paisaje cambia.</p>
+
+        <select id="paisaje">
+            <option value="dia">Día</option>
+            <option value="noche">Noche</option>
+        </select>
+        <img id="paisaje-img" src="./img/paisaje-dia.JPG" alt="Paisaje de día">
+
+        <h2>Ejercicio 6: El Altar Maldito (Evento .submit())</h2>
+        <p>Enunciado:<br> Completa el formulario con tus datos para invocar al
+            espíritu ancestral. Al enviar el formulario, aparece un mensaje.</p>
+        <p>Resultado esperado:<br> Se muestra un mensaje de confirmación al
+            enviar el formulario.</p>
+
+        <form id="invocacion">
+            <input type="text" placeholder="Tu nombre">
+            <input type="submit" value="Invocar">
+        </form>
+        <p id="resultado-invocacion" style="display:none;">¡El espíritu ha sido
+            invocado!</p>
+
+        <h2>Ejercicio 7: Las Voces del Viento (Eventos .keydown() y
+            .keyup())</h2>
+        <p>Enunciado:<br> Escribe algo en el cuadro de texto para escuchar las
+            voces
+            del viento. Las letras se reproducen mientras las escribes, y el
+            texto desaparece al soltar la tecla.</p>
+        <p>Resultado esperado:<br> El texto aparece mientras se escribe y
+            desaparece al soltar la tecla.</p>
+
+        <input type="text" id="voces" placeholder="Escribe algo...">
+        <p id="voces-resultado"></p>
+
+        <h2>Ejercicio 8: La Puerta del Destino (Evento .keypress())</h2>
+        <p>Enunciado:<br> Solo una tecla abre la puerta del destino. Intenta
+            varias teclas y descubre cuál te permitirá salir del bosque.</p>
+        <p>Resultado esperado:<br> Si se presiona la tecla correcta, aparece un
+            mensaje revelando la salida.</p>
+
+        <p id="puerta-destino">Presiona una tecla para intentar abrir la
+            puerta...</p>
+
+        <script>
+        // Ejercicio 1: Evento .click()
+
+
+        // Ejercicio 2: Evento .dblclick()
+
+
+        // Ejercicio 3: Evento .hover()
+
+
+        // Ejercicio 4: Eventos .focus() y .blur()
+
+
+        // Ejercicio 5: Evento .change()
+
+
+        // Ejercicio 6: Evento .submit()
+ 
+
+        // Ejercicio 7: Eventos .keydown() y .keyup()
+
+
+        // Ejercicio 8: Evento .keypress()
+
+    </script>
+    </body>
+</html>

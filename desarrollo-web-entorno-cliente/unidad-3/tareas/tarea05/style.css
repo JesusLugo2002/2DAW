@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  color: #ff5555;
+}
+
+input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 50%;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 50%;
+  margin: auto;
+}
+
+ul li {
+  background-color: #333;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Estilo para los iconos */
+.iconos {
+  display: flex;
+  gap: 10px; /* Espacio entre los iconos */
+}
+
+.iconos button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ff5555;
+}
+
+.iconos button:hover {
+  color: #ff3333;
+}
