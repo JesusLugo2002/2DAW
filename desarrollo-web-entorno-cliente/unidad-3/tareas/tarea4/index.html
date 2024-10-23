@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jesús Lugo">
+        <title>Ejercicios de jQuery - Batman</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+
+        <h1>Ejercicios de jQuery basados en Batman</h1>
+        <p>Historia de Batman para practicar jQuery
+            En Gotham City, Batman se enfrenta a una serie de desafíos mientras
+            intenta detener a El Joker y su ejército de villanos. Para resolver
+            estos problemas, Batman utiliza la tecnología avanzada de la
+            Batcomputadora y otros gadgets. Pero esta vez, necesita tu ayuda
+            para manipular diferentes elementos en su centro de operaciones para
+            mantener todo bajo control.</p>
+
+        <!-- Ejercicio 1 -->
+        <h2>Ejercicio 1: Cambiando el atributo de la Batseñal</h2>
+        <img id="batsignal" src="./img/old-batsignal.jpg" alt="Batseñal">
+
+        <!-- Ejercicio 2 -->
+        <h2>Ejercicio 2: Actualizando el contenido del monitor de la
+            Batcomputadora</h2>
+        <div id="batcomputer2">Escaneando...</div>
+
+        <!-- Ejercicio 3 -->
+        <h2>Ejercicio 3: Cambiando el mensaje en la pantalla del Batmóvil</h2>
+        <p id="batmobile-status">Estado: En espera</p>
+
+        <!-- Ejercicio 4 -->
+        <h2>Ejercicio 4: Activando el modo sigiloso</h2>
+        <div id="batman4">Batman está listo.</div>
+
+        <!-- Ejercicio 5 -->
+        <h2>Ejercicio 5: Desactivando el modo sigiloso</h2>
+        <div id="batman5" class="sigiloso">Batman está listo.</div>
+
+        <!-- Ejercicio 6 -->
+        <h2>Ejercicio 6: Alternar el modo detective de Batman</h2>
+        <div id="batman6">Batman está en modo normal.</div>
+
+        <!-- Ejercicio 7 -->
+        <h2>Ejercicio 7: Añadiendo un nuevo villano a la lista de enemigos</h2>
+        <ul id="villains">
+            <li>El Joker</li>
+            <li>Dos Caras</li>
+        </ul>
+
+        <!-- Ejercicio 8 -->
+        <h2>Ejercicio 8: Añadiendo a Catwoman al inicio de la lista de
+            aliados</h2>
+        <ul id="allies8">
+            <li>Robin</li>
+            <li>Alfred</li>
+        </ul>
+
+        <!-- Ejercicio 9 -->
+        <h2>Ejercicio 9: Insertando un aviso antes del Batordenador</h2>
+        <div id="batcomputer9">Monitor principal activo</div>
+
+        <!-- Ejercicio 10 -->
+        <h2>Ejercicio 10: Agregar una alerta después del Batordenador</h2>
+        <div id="batcomputer10">Monitor principal activo</div>
+
+        <!-- Ejercicio 11 -->
+        <h2>Ejercicio 11: Limpiando la lista de enemigos capturados</h2>
+        <ul id="captured-villains">
+            <li>El Joker</li>
+            <li>Pingüino</li>
+        </ul>
+
+        <!-- Ejercicio 12 -->
+        <h2>Ejercicio 12: Eliminando un gadget del inventario</h2>
+        <ul id="gadgets12">
+            <li>Batarang</li>
+            <li>Cinturón de herramientas</li>
+            <li>Batimóvil</li>
+        </ul>
+
+        <!-- Ejercicio 13 -->
+        <h2>Ejercicio 13: Cambiando el atributo href de un enlace a la
+            Batcave</h2>
+        <a id="batcave-link" href="old_url.html">Entrar a la Batcave</a>
+
+        <!-- Ejercicio 14 -->
+        <h2>Ejercicio 14: Insertando un nuevo reporte en la Batcomputadora</h2>
+        <div id="report">No hay reportes nuevos.</div>
+
+        <!-- Ejercicio 15 -->
+        <h2>Ejercicio 15: Cambiando el texto de alerta del Batmóvil</h2>
+        <div id="batmobile-alert">Alerta: Sin problemas.</div>
+
+        <!-- Ejercicio 16 -->
+        <h2>Ejercicio 16: Añadiendo una advertencia en el inicio del
+            informe</h2>
+        <div id="bat-report">
+            <p>El escaneo de seguridad ha comenzado.</p>
+        </div>
+
+        <!-- Ejercicio 17 -->
+        <h2>Ejercicio 17: Alternando la clase "seguro" en el informe de
+            seguridad</h2>
+        <div id="security-report" class="seguro">Todo seguro en Gotham.</div>
+
+        <!-- Ejercicio 18 -->
+        <h2>Ejercicio 18: Insertando un aviso antes de la lista de aliados</h2>
+        <ul id="allies18">
+            <li>Robin</li>
+            <li>Alfred</li>
+        </ul>
+
+        <!-- Ejercicio 19 -->
+        <h2>Ejercicio 19: Insertando una nota después de la lista de
+            gadgets</h2>
+        <ul id="gadgets19">
+            <li>Batarang</li>
+            <li>Batimóvil</li>
+        </ul>
+
+        <!-- Ejercicio 20 -->
+        <h2>Ejercicio 20: Eliminando un aliado de la lista</h2>
+        <ul id="allies20">
+            <li>Robin</li>
+            <li>Alfred</li>
+        </ul>
+        <script>
+			$(document).ready(function(){
+				// Ejercicio 1
+				$("#batsignal").attr("src", "./img/new-batsignal.jpg")
+				
+				// Ejercicio 2
+				$("#batcomputer2").html("<strong>Se han detectado enemigos alrededor.</strong>")
+
+				// Ejercicio 3
+                $("#batmobile-status").text("Estado: preparado para partir!")
+				
+				// Ejercicio 4
+				$("#batman4").addClass("sigiloso")
+
+				// Ejercicio 5
+				$("#batman5").removeClass("sigiloso")
+
+				// Ejercicio 6
+                $("#batman6").toggleClass("detective")
+
+				// Ejercicio 7
+				$("#villains").append("<li>Harley Queen</li>")
+				
+				// Ejercicio 8
+				$("#allies8").prepend("<li>Catwoman</li>")
+
+				// Ejercicio 9
+                $("#batcomputer9").before("<h4>AVISO: Iniciando sistema</h4>")
+				
+				// Ejercicio 10
+				$("#batcomputer10").after("<h4>AVISO: Apagando sistema</h4>")
+	
+				// Ejercicio 11
+				$("#captured-villains").empty()
+	
+				// Ejercicio 12
+				$("#gadgets12 li:eq(1)").remove()
+
+				// Ejercicio 13
+				$("#batcave-link").attr({"href": "https://batcave.net/", "target": "_blank"})
+
+				// Ejercicio 14
+				$("#report").text("Un nuevo reportaje de última hora!")
+
+				// Ejercicio 15
+				$("#batmobile-alert").text("Alerta: un peligro está cerca!")
+
+				// Ejercicio 16
+				$("#bat-report").prepend("<strong>ADVERTENCIA: Se han detectado amenazas.</strong>")
+
+				// Ejercicio 17
+				$("#security-report").toggleClass("seguro")
+				
+				// Ejercicio 18
+				$("#allies18").before("<b>Llamando a mis aliados!</b>")
+
+				// Ejercicio 19
+				$("#gadgets19").after("NOTA: Comprar más gadgets")
+	
+				// Ejercicio 20
+				$("#allies20 li:eq(0)").remove()
+			});
+		</script>
+
+    </body>
+</html>
