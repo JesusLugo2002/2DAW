@@ -1,9 +1,11 @@
-// Función #1 - Añadir misiones a lista
+// Función para agregar tareas
 $("#agregar-tarea").click(function() {
     const new_task = $("#nueva-tarea").val()
     $("#lista-tareas").append(getTask(new_task));   
+    bindEvents()
 });
 
+// Función que retorna una nueva tarea a raiz de su nombre
 function getTask(name) {
     html = `
     <li>
@@ -16,3 +18,37 @@ function getTask(name) {
     `
     return html
 }
+
+// Funcionalidad para los botones de Edit y Delete
+function bindEvents() {
+    $(".delete-button").click(function() {
+        $(this).parents("li").remove();
+    });
+
+    $(".edit-button").click(function() {
+        const item = $(this).parents("li")
+        $(".selected-edit").removeClass("selected-edit")
+        $(item).addClass("selected-edit")
+        toggleModal()
+    });
+}
+
+// Funcionalidad del modal
+function toggleModal() {
+    $("#blur-background").show();
+    $("#toggle-modal").show();
+    $("#toggle-modal #confirm-button").click(function() {
+        $(".selected-edit").find("p").text($("#toggle-modal input").val());
+        $("#toggle-modal").hide();
+        $("#blur-background").hide();
+    });
+    $("#toggle-modal #cancel-button").click(function() {
+        $("#toggle-modal").hide();
+        $("#blur-background").hide();
+    });
+}
+
+// Función "borrar todas las tareas"
+$("#limpiar-tareas").click(function() {
+    $("#lista-tareas").empty()
+});

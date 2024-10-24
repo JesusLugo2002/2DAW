@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="blur-background"></div>
         <h3>"La Resistencia de los Autobots"</h3>
         <p>En un futuro distante, los Autobots están enfrentando su mayor
             desafío. Los Decepticons han tomado control de la Ciudad Principal
@@ -38,6 +39,15 @@
         <input type="text" id="nueva-tarea"
             placeholder="Agregar nueva misión...">
         <button id="agregar-tarea">Agregar Misión</button>
+
+        <div id="toggle-modal">
+            <h3 style="text-align: center;">Nueva misión</h3>
+            <input type="text" name="new-task" id="new-task">
+            <div style="display: flex;">
+                <button id="cancel-button">Cancelar</button>
+                <button id="confirm-button">Editar misión</button>
+            </div>
+        </div>
 
         <ul id="lista-tareas">
             <!-- Las misiones aparecerán aquí -->
