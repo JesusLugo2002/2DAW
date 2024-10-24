@@ -1,0 +1,27 @@
+div {
+    text-align: center;
+}
+
+.a {
+    background-color: lightyellow;
+}
+
+.b {
+    background-color: lightgreen;
+}
+
+.c {
+    background-color: lightblue;
+}
+
+.d {
+    background-color: rgb(255, 138, 255);
+}
+
+.e {
+    background-color: rgb(255, 196, 87);
+}
+
+.f {
+    background-color: pink;
+}
