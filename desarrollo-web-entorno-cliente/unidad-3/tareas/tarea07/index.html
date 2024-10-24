@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jesus Lugo">
+         <!-- Arepitas  -->
         <title>Ejercicios de Robo al Casino con jQuery</title>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <style>
@@ -108,10 +110,21 @@
                 });
 
                 // Ejercicio 3
-                // No tiene sentido esta vaina 
+                $("#activarAlarma").on("click", function() {
+                    $("#alarma").show()
+                });
+                $("#desactivarAlarma").on("click", function() {
+                    $("#alarma").hide()
+                    $("#activarAlarma").off(("click"))
+                });
 
                 // Ejercicio 4
-                // Este tampoco tiene sentido
+                $("#enviarSenal").on("click", function() {
+                    $("#todosListos").trigger("mySignal");
+                });
+                $("#todosListos").on("mySignal", function() {
+                    $(this).show()
+                });
 
                 // Ejercicio 5
                 $("#esconderse").on("click", function() {
