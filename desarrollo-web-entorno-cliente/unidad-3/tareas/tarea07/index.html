@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicios de Robo al Casino con jQuery</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+       .sensor, .alarma, .mensaje {
+            display: none;
+            margin: 20px;
+        }
+        .ladron5, .ladron6 {
+            display: true;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.css"/><script  type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cauce_cookie.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-base.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-eforma.js"></script></head>
+    <body>
+        <h1>Ejercicios de Robo al Casino</h1>
+
+        <!-- Ejercicio 1 -->
+        <h2>Ejercicio 1: Iniciar Plan</h2>
+        <p>Un grupo de ladrones está planeando un robo al casino. Hay un botón
+            para iniciar el plan. Al hacer clic en el botón "Iniciar Plan", se
+            debe evitar que el formulario de planeación del robo sea enviado.
+            Usa event.preventDefault() para lograrlo.</p>
+        <form id="planForm">
+            <button id="iniciarPlan">Iniciar Plan</button>
+        </form>
+
+        <!-- Ejercicio 2 -->
+        <h2>Ejercicio 2: Sensor Activado</h2>
+        <p>Uno de los ladrones ha colocado un sensor en la entrada del casino.
+            Haz que cuando se pase el mouse sobre el sensor, aparezca un mensaje
+            que diga "Alerta: Sensor activado". Usa .on() para manejar este
+            evento.</p>
+        <div id="sensor">Pasar por el sensor</div>
+        <div class="mensaje" id="mensajeSensor">Alerta: Sensor activado</div>
+
+        <!-- Ejercicio 3 -->
+        <h2>Ejercicio 3: Alarma de Seguridad</h2>
+        <p>El equipo de seguridad del casino ha sido desactivado temporalmente.
+            Sin embargo, deben ser capaces de activar y desactivar la alarma de
+            seguridad manualmente. Crea un botón que active la alarma con .on()
+            y otro que la desactive con .off().</p>
+        <button id="activarAlarma">Activar Alarma</button>
+        <button id="desactivarAlarma">Desactivar Alarma</button>
+        <div class="alarma" id="alarma">Alarma Activada</div>
+
+        <!-- Ejercicio 4 -->
+        <h2>Ejercicio 4: Todos Listos</h2>
+        <p>El jefe de los ladrones quiere asegurarse de que todos están en su
+            lugar antes de iniciar el plan. Crea un botón que, al hacer clic,
+            envíe una señal a todos los miembros del equipo, utilizando
+            .trigger().</p>
+        <button id="enviarSenal">Enviar Señal</button>
+        <div class="mensaje" id="todosListos">Todos listos</div>
+
+        <!-- Ejercicio 5 -->
+        <h2>Ejercicio 5: Esconderse</h2>
+        <p>Los ladrones deben esconderse rápidamente. Al hacer clic en el botón
+            "Esconderse", todos los miembros del equipo deben desaparecer usando
+            .hide().</p>
+        <button id="esconderse">Esconderse</button>
+        <div class="ladron5">Ladrón 1</div>
+        <div class="ladron5">Ladrón 2</div>
+
+        <!-- Ejercicio 6 -->
+        <h2>Ejercicio 6: Moverse</h2>
+        <p>Para despistar a las cámaras de seguridad, los ladrones deben moverse
+            de un lugar a otro. Crea un botón "Moverse" que, al hacer clic, haga
+            que los ladrones desaparezcan lentamente usando .fadeOut().</p>
+        <button id="moverse">Moverse</button>
+        <div class="ladron6">Ladrón 3</div>
+        <div class="ladron6">Ladrón 4</div>
+
+        <!-- Ejercicio 7 -->
+        <h2>Ejercicio 7: Salir del Casino</h2>
+        <p>Cuando el equipo ha completado el robo, quieren salir del casino sin
+            ser detectados. Al hacer clic en "Salir", haz que todos los
+            elementos en la pantalla deslicen hacia arriba utilizando
+            .slideUp().</p>
+        <button id="salir">Salir</button>
+        <div class="ladron7">Ladrón 5</div>
+        <div class="ladron7">Ladrón 6</div>
+
+        <!-- Ejercicio 8 -->
+        <h2>Ejercicio 8: Restaurar Sistema</h2>
+        <p>Una vez que los ladrones han salido, el sistema de seguridad del
+            casino vuelve a la normalidad. Usa .slideDown() para mostrar un
+            mensaje "Sistema restaurado" en la pantalla.</p>
+        <div class="mensaje" id="sistemaRestaurado">Sistema restaurado</div>
+        <button id="restaurar">Restaurar Sistema</button>
+
+        <script>
+            $(document).ready(function() {
+                // Ejercicio 1
+                $("#planForm").submit(function(event) {
+                    event.preventDefault()
+                });
+
+                // Ejercicio 2
+                $("#sensor").on("mouseover", function() {
+                    $("#mensajeSensor").show();
+                });
+                $("#sensor").on("mouseout", function() {
+                    $("#mensajeSensor").hide();
+                });
+
+                // Ejercicio 3
+                // No tiene sentido esta vaina 
+
+                // Ejercicio 4
+                // Este tampoco tiene sentido
+
+                // Ejercicio 5
+                $("#esconderse").on("click", function() {
+                    $(".ladron5").hide();
+                });
+
+                // Ejercicio 6
+                $("#moverse").on("click", function() {
+                    $(".ladron6").fadeOut()
+                });
+
+                // Ejercicio 7
+                $("#salir").on("click", function() {
+                    $(".ladron7").slideUp()
+                });
+
+                // Ejercicio 8
+                $("#restaurar").on("click", function() {
+                    $("#sistemaRestaurado").slideDown()
+                });
+            });
+        </script>
+    </body>
+</html>
