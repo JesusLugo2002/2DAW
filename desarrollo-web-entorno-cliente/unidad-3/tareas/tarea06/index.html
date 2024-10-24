@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jesús Lugo">
         <title>Ejercicios de Terror con jQuery</title>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <style>
@@ -11,6 +12,8 @@
             h2 { color: #ff5555; }
             button, input, select { margin: 10px 0; padding: 10px; }
             p, img { margin: 10px 0; }
+            #agua, .reflejo { color: lightskyblue; }
+            #sombras { transition: color 2s; }
         </style>
     </head>
     <body>
@@ -106,32 +109,75 @@
             mensaje revelando la salida.</p>
 
         <p id="puerta-destino">Presiona una tecla para intentar abrir la
-            puerta...</p>
+            puerta... (intenta con Enter...)</p>
 
         <script>
             $(document).ready(function() {
                 // Ejercicio 1: Evento .click()
-
+                $("#entrar").click(function() {
+                    $("#atras").show()
+                    $("#mensaje").show()
+                });
+                $("#atras").click(function() {
+                    $("#atras").hide()
+                    $("#mensaje").hide()
+                });
 
                 // Ejercicio 2: Evento .dblclick()
-
+                $("#agua").dblclick(function() {
+                    $("#agua").after("<p class='reflejo'>Hola, soy el reflejo de tu espíritu...</p>")
+                })
 
                 // Ejercicio 3: Evento .hover()
-
+                $("#sombras").hover(function() {
+                    $("#sombras").css("color", "black")
+                }, function() {
+                    $("#sombras").css("color", "white")
+                });
 
                 // Ejercicio 4: Eventos .focus() y .blur()
-
+                $("#ojo").focus(function() {
+                    $("#ojo-img").attr("src", "./img/ojo-abierto.jpg");
+                });
+                $("#ojo").blur(function() {
+                    $("#ojo-img").attr("src", "./img/ojo-cerrado.jpg");
+                });
 
                 // Ejercicio 5: Evento .change()
-
+                $("#paisaje").change(function() {
+                    switch ($(this).val()) {
+                        case "dia":
+                            $("#paisaje-img").attr("src", "./img/paisaje-dia.JPG")
+                            break;
+                        case "noche":
+                            $("#paisaje-img").attr("src", "./img/paisaje-noche.JPG")
+                            break;
+                        default:
+                            break;
+                    }
+                })
 
                 // Ejercicio 6: Evento .submit()
-        
+                $("#invocacion").submit(function(event) {
+                    event.preventDefault();
+                    $("#resultado-invocacion").show();
+                })
 
                 // Ejercicio 7: Eventos .keydown() y .keyup()
-
+                $("#voces").keydown(function(event) {
+                    const char = String.fromCharCode(event.which)
+                    $("#voces-resultado").append(char)
+                });
+                $("#voces").keyup(function(event) {
+                    $("#voces-resultado").empty()
+                });
 
                 // Ejercicio 8: Evento .keypress()
+                $(document).keypress(function(event) {
+                    if (event.which == 13) {
+                        $("#puerta-destino").after("<p><strong>Aqui hay una salida de este oscuro lugar. ¡Escapa!</strong></p>")
+                    }
+                });
             })
     </script>
     </body>

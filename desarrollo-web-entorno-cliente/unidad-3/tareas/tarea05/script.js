@@ -43,9 +43,13 @@ $(document).ready(function() {
         $("#blur-background").show();
         $("#toggle-modal").show();
         $("#toggle-modal #confirm-button").click(function() {
-            $(".selected-edit").find("p").text($("#toggle-modal input").val());
-            $("#toggle-modal").hide();
-            $("#blur-background").hide();
+            if ($("#toggle-modal input").val() != "") {
+                $(".selected-edit").find("p").text($("#toggle-modal input").val());
+                $("#toggle-modal").hide();
+                $("#blur-background").hide();
+            } else {
+                alert("Nombre de misión requerida!")
+            }
         });
         $("#toggle-modal #cancel-button").click(function() {
             $("#toggle-modal").hide();
