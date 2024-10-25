@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    let productosSeleccionados = {};
     const subCategories = {
         'bebidas': ['Calientes', 'Refrescos', 'Alcohólicas'],
         'primer-plato': ['Sopa', 'Ensalada'],
@@ -34,7 +33,7 @@ $(document).ready(function () {
             products.forEach(product => {
                 $('.product-list').append(`
                     <div class="producto" data-id="${product.id}">
-                        <span>${product.nombre}</span>
+                        <div>${product.nombre}</div>
                         <div class="product_qty">
                             <button class="btn-decrementar">-</button>
                             <span class="cantidad">0</span>

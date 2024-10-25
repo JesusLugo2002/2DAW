@@ -164,3 +164,16 @@ body {
   border-radius: 5px;
   font-size: 18px;
 }
+
+.producto {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.product_qty {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
