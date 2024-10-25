@@ -1,0 +1,122 @@
+{
+  "Calientes": [
+    { "nombre": "Café", "id": 1 },
+    { "nombre": "Té", "id": 2 },
+    { "nombre": "Chocolate caliente", "id": 14 },
+    { "nombre": "Latte", "id": 15 },
+    { "nombre": "Cappuccino", "id": 16 },
+    { "nombre": "Macchiato", "id": 17 },
+    { "nombre": "Mocha", "id": 18 },
+    { "nombre": "Café con leche", "id": 19 },
+    { "nombre": "Té verde", "id": 20 },
+    { "nombre": "Té chai", "id": 21 }
+  ],
+  "Refrescos": [
+    { "nombre": "Coca Cola", "id": 3 },
+    { "nombre": "Sprite", "id": 4 },
+    { "nombre": "Fanta", "id": 22 },
+    { "nombre": "Pepsi", "id": 23 },
+    { "nombre": "7Up", "id": 24 },
+    { "nombre": "Mountain Dew", "id": 25 },
+    { "nombre": "Agua tónica", "id": 26 },
+    { "nombre": "Ginger Ale", "id": 27 },
+    { "nombre": "Limonada", "id": 28 },
+    { "nombre": "Agua con gas", "id": 29 }
+  ],
+  "Alcohólicas": [
+    { "nombre": "Cerveza", "id": 5 },
+    { "nombre": "Vino", "id": 6 },
+    { "nombre": "Whisky", "id": 30 },
+    { "nombre": "Vodka", "id": 31 },
+    { "nombre": "Tequila", "id": 32 },
+    { "nombre": "Ron", "id": 33 },
+    { "nombre": "Gin", "id": 34 },
+    { "nombre": "Brandy", "id": 35 },
+    { "nombre": "Champán", "id": 36 },
+    { "nombre": "Sake", "id": 37 }
+  ],
+  "Sopa": [
+    { "nombre": "Sopa de pollo", "id": 7 },
+    { "nombre": "Sopa de verduras", "id": 38 },
+    { "nombre": "Sopa de mariscos", "id": 39 },
+    { "nombre": "Sopa de tomate", "id": 40 },
+    { "nombre": "Sopa de cebolla", "id": 41 },
+    { "nombre": "Sopa de lentejas", "id": 42 },
+    { "nombre": "Sopa de champiñones", "id": 43 },
+    { "nombre": "Sopa de miso", "id": 44 },
+    { "nombre": "Sopa de fideos", "id": 45 },
+    { "nombre": "Sopa de calabaza", "id": 46 }
+  ],
+  "Ensalada": [
+    { "nombre": "Ensalada César", "id": 8 },
+    { "nombre": "Ensalada griega", "id": 47 },
+    { "nombre": "Ensalada caprese", "id": 48 },
+    { "nombre": "Ensalada de col", "id": 49 },
+    { "nombre": "Ensalada de atún", "id": 50 },
+    { "nombre": "Ensalada de espinacas", "id": 51 },
+    { "nombre": "Ensalada de quinoa", "id": 52 },
+    { "nombre": "Ensalada de frutas", "id": 53 },
+    { "nombre": "Ensalada Waldorf", "id": 54 },
+    { "nombre": "Ensalada de pasta", "id": 55 }
+  ],
+  "Carne": [
+    { "nombre": "Chuleta de cerdo", "id": 9 },
+    { "nombre": "Solomillo de ternera", "id": 100 },
+    { "nombre": "Estofado de ternera", "id": 101 },
+    { "nombre": "Cordero al horno", "id": 102 },
+    { "nombre": "Pato confitado", "id": 103 },
+    { "nombre": "Costillas a la barbacoa", "id": 104 },
+    { "nombre": "Pollo al curry", "id": 105 },
+    { "nombre": "Filete a la pimienta", "id": 106 },
+    { "nombre": "Hamburguesa de carne", "id": 107 },
+    { "nombre": "Lomo de cerdo asado", "id": 108 }
+  ],
+  "Pescado": [
+    { "nombre": "Salmón al horno", "id": 10 },
+    { "nombre": "Merluza a la plancha", "id": 109 },
+    { "nombre": "Bacalao frito", "id": 110 },
+    { "nombre": "Atún a la parrilla", "id": 111 },
+    { "nombre": "Dorada al horno", "id": 112 },
+    { "nombre": "Sardinas asadas", "id": 113 },
+    { "nombre": "Lenguado a la meunière", "id": 114 },
+    { "nombre": "Lubina al vapor", "id": 115 },
+    { "nombre": "Trucha a la plancha", "id": 116 },
+    { "nombre": "Pescadilla frita", "id": 117 }
+  ],
+  "Vegetariano": [
+    { "nombre": "Tofu asado", "id": 11 },
+    { "nombre": "Hamburguesa de garbanzos", "id": 118 },
+    { "nombre": "Falafel", "id": 119 },
+    { "nombre": "Berenjenas rellenas", "id": 120 },
+    { "nombre": "Curry de lentejas", "id": 121 },
+    { "nombre": "Pimientos asados", "id": 122 },
+    { "nombre": "Quiche de espinacas", "id": 123 },
+    { "nombre": "Tacos vegetarianos", "id": 124 },
+    { "nombre": "Pasta con pesto", "id": 125 },
+    { "nombre": "Arroz con verduras", "id": 126 }
+  ],
+  "Dulces": [
+    { "nombre": "Tarta de chocolate", "id": 12 },
+    { "nombre": "Helado de vainilla", "id": 127 },
+    { "nombre": "Brownie", "id": 128 },
+    { "nombre": "Mousse de limón", "id": 129 },
+    { "nombre": "Tarta de queso", "id": 130 },
+    { "nombre": "Crema catalana", "id": 131 },
+    { "nombre": "Tiramisú", "id": 132 },
+    { "nombre": "Pastel de zanahoria", "id": 133 },
+    { "nombre": "Tarta de manzana", "id": 134 },
+    { "nombre": "Profiteroles", "id": 135 }
+  ],
+  "Frutas": [
+    { "nombre": "Macedonia", "id": 13 },
+    { "nombre": "Fresas con nata", "id": 136 },
+    { "nombre": "Plátano caramelizado", "id": 137 },
+    { "nombre": "Manzana asada", "id": 138 },
+    { "nombre": "Brochetas de frutas", "id": 139 },
+    { "nombre": "Cítricos variados", "id": 140 },
+    { "nombre": "Mango fresco", "id": 141 },
+    { "nombre": "Piña colada", "id": 142 },
+    { "nombre": "Melón con jamón", "id": 143 },
+    { "nombre": "Copa de frutas del bosque", "id": 144 }
+  ]
+}

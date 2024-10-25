@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
+}
+
+.menu-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Espacio entre los botones si es necesario */
+  align-items: center;
+  height: 85vh; /* El menú izquierdo ocupa toda la altura de la pantalla */
+  background-color: #333;
+  padding: 20px;
+  gap: 10px; /* Añade un espacio de 10px entre los botones */
+}
+
+.menu-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 95vh; /* Mantiene la altura completa */
+  padding: 20px; /* Misma cantidad de padding que la columna izquierda */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+}
+
+.menu-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #555;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  height: calc(100vh / 4); /* Ajustar esto según la cantidad de botones */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.menu-btn:hover {
+  background-color: #666;
+}
+
+.sub-menu {
+  margin-bottom: 20px;
+}
+
+.sub-menu button {
+  padding: 10px;
+  background-color: #555;
+  border: none;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.sub-menu button:hover {
+  background-color: #666;
+}
+
+.product-list {
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.product-list .product-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.product-list input[type="radio"] {
+  margin-right: 10px;
+}
+
+.product-list input[type="number"] {
+  width: 50px;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.selected-products {
+  width: 20%; /* Ajusta el tamaño de la tercera columna */
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  height: 85vh;
+  overflow-y: auto;
+}
+
+.selected-products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.selected-products ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.selected-products li {
+  margin-bottom: 10px;
+}
+
+.product-label {
+  margin-right: 20px; /* Añade más espacio entre el nombre del producto y los controles de cantidad */
+}
+
+.cantidad-control {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre los botones y la cantidad */
+}
+
+.cantidad {
+  width: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#titulo-restaurante {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #cc0000; /* Color rojo que contrasta */
+}
+
+#enviarComanda {
+  align-self: flex-start; /* Alinea el botón al inicio de la columna derecha */
+  width: 100%; /* El botón ocupará todo el ancho de la columna derecha */
+  padding: 15px;
+  background-color: #cc0000;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: auto; /* Asegura que el botón esté al final */
+}
+
+#enviarComanda:hover {
+  background-color: #ff3333;
+}
+
+#mensaje-confirmacion {
+  background-color: #cc0000;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
