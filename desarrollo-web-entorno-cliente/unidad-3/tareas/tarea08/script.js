@@ -43,56 +43,7 @@ $(document).ready(function () {
                     </div>
                 `);
             });
-
-            // $('.btn-incrementar').click(function () {
-            //     const cantidadSpan = $(this).siblings('.cantidad');
-            //     let cantidad = parseInt(cantidadSpan.text());
-            //     cantidad++;
-            //     cantidadSpan.text(cantidad);
-            //     actualizarProductosSeleccionados($(this).closest('.producto'), cantidad);
-            // });
-
-            // $('.btn-decrementar').click(function () {
-            //     const cantidadSpan = $(this).siblings('.cantidad');
-            //     let cantidad = parseInt(cantidadSpan.text());
-            //     if (cantidad > 0) {
-            //         cantidad--;
-            //         cantidadSpan.text(cantidad);
-            //         actualizarProductosSeleccionados($(this).closest('.producto'), cantidad);
-            //     }
-            // });
         });
     }
-
-    function actualizarProductosSeleccionados(productoDiv, cantidad) {
-        const productoId = productoDiv.data('id');
-        const productoNombre = productoDiv.find('span').first().text();
-
-        if (cantidad > 0) {
-            productosSeleccionados[productoId] = { nombre: productoNombre, cantidad: cantidad };
-        } else {
-            delete productosSeleccionados[productoId];
-        }
-
-        mostrarProductosSeleccionados();
-    }
-
-    function mostrarProductosSeleccionados() {
-        $('#productos-seleccionados').empty();
-        $.each(productosSeleccionados, function (id, producto) {
-            $('#productos-seleccionados').append(`<li>${producto.nombre}: ${producto.cantidad}</li>`);
-        });
-    }
-
-    $('#enviarComanda').click(function () {
-        if (Object.keys(productosSeleccionados).length > 0) {
-            $('#mensaje-confirmacion').fadeIn().delay(2000).fadeOut();
-            productosSeleccionados = {};
-            mostrarProductosSeleccionados();
-            $('.product-list').find('.cantidad').text(0);
-        } else {
-            alert('No hay productos seleccionados para enviar.');
-        }
-    });
 });
         
