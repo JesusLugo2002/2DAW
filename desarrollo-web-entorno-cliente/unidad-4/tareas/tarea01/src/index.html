@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <title>Pesadilla en TypeScript</title>
+        <style>
+        /* CSS Styles */
+        body {
+            background-color: #111;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+
+        h1 {
+            color: crimson;
+        }
+
+        .exercise {
+            margin: 20px 0;
+        }
+
+        .output {
+            color: #00ff00;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.css"/><script  type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cauce_cookie.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-base.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-eforma.js"></script></head>
+    <body>
+        <h1>Pesadilla en TypeScript</h1>
+
+        <!-- Exercise Descriptions -->
+        <div class="exercise">
+            <p><strong>D1S1.1. ¿Qué es TypeScript?</strong></p>
+            <p>Ejercicio 1: Define un mensaje y muéstralo en el div con id
+                "output1"</p>
+            <div id="output1" class="output"></div>
+        </div>
+
+        <div class="exercise">
+            <p>Ejercicio 2: Crea un objeto Freddy con nombre, edad y
+                pesadilla. Muéstralo en el div con id "output2" </p>
+            <div id="output2" class="output"></div>
+        </div>
+
+        <div class="exercise">
+            <p><strong>D1S2.1. Funciones Tipadas</strong></p>
+            <p>Ejercicio 1: Define una función atacar al que se le pase por
+                valor el texto del arma y muestre
+                en el div con id "output3" el mensaje `Freddy ataca con
+                ${arma}`.
+            </p>
+            <div id="output3" class="output"></div>
+        </div>
+
+        <div class="exercise">
+            <p>Ejercicio 2: Crea una función saltar con parámetro opcional y
+                saque en el div con id "output4"
+                el mensaje `Freddy salta (parámetro opcional) / (valor pasado
+                por referencia) metros`" </p>
+            <div id="output4" class="output"></div>
+        </div>
+
+        <div class="exercise">
+            <p><strong>D1S2.2. Funciones Flecha y sus diferencias con funciones
+                    tradicionales</strong></p>
+            <p>Ejercicio 1: Crear clase Pesadilla con una Función tradicional
+                gritar con this. Se le pasa un nombre en la función devuelve:
+                ¡nombre(en mayúsculas) está aquí! para
+                ser mostrado en el div con id "output5"
+            </p>
+            <div id="output5" class="output"></div>
+        </div>
+
+        <div class="exercise">
+            <p>Ejercicio 2: Crear clase Pesadilla con unaFunción flecha gritar
+                que mantiene el contexto de this. Se le pasa un nombre en la
+                función devuelve: ¡nombre(en mayúsculas) está aquí! para
+                ser mostrado en el div con id "output6"</p>
+            <div id="output6" class="output"></div>
+        </div>
+        <script src="/dist/script.js"></script>
+    </body>
+</html>
