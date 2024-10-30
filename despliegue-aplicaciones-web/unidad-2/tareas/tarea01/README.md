@@ -12,6 +12,8 @@ En una web se pueden identificar __tres capas principales__: __la capa de presen
 
 __LAMP__ es un sistema de infraestructura web con usa las siguientes herramientas: __Linux__ como sistema operativo; __Apache__ como servidor web; __MySQL/MariaDB__ como gestor de bases de datos y __PHP__ como lenguaje de programación.
 
-Por otro lado, __WISA__ Sus componentes son Windows (sistema operativo), Internet Information Services (servidor web), SQL Server (manejador de bases de datos) y ASP (no es un lenguaje interpretado per se, sino que sirve como un medio para trabajar con otro que sí lo es, como Visual Basic, bajo un entorno web).
+Por otro lado, __WISA__ usa como componentes: __Windows__ (sistema operativo), __Internet Information Services__ (servidor web), __SQL Server__ (manejador de bases de datos) y __ASP__ (que hace de intermediario para trabajar con un lenguaje de programación, __Visual Basic__).
 
-##
+## Instalación de servidor web APACHE
+
+Para realizar la instalación de nuestro servidor web APACHE realizaremos los siguientes pasos
