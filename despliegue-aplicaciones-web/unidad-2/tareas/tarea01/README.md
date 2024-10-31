@@ -16,4 +16,13 @@ Por otro lado, __WISA__ usa como componentes: __Windows__ (sistema operativo), _
 
 ## Instalación de servidor web APACHE
 
-Para realizar la instalación de nuestro servidor web APACHE realizaremos los siguientes pasos
+Para realizar la instalación de nuestro servidor web APACHE, tenemos que realizar las siguientes acciones: 
+
+### 1. Actualizar paquetes e instalación desde consola
+```sh
+# actualizar paquetes
+sudo apt-get update
+
+# instalar Apache
+sudo apt-get install apache2 -y
+```
