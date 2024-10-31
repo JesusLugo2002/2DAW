@@ -1,0 +1,34 @@
+
+#laberinto {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    gap: 2px;
+    margin: 20px;
+}
+.celda {
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    border: 1px solid #333;
+}
+.jugador {
+    background-color: green;
+}
+.trampa {
+    background-color: red;
+}
+.objeto {
+    background-color: gold;
+}
+.salida {
+    background-color: blue;
+}
+#info-panel {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+button {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
