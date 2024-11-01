@@ -1,6 +1,24 @@
 # Tarea 1.1- Instalación de servidor web Apache
 
-## Contenidos
+<div align=center>
+    <img src="https://miro.medium.com/v2/resize:fit:4096/1*6rDcIgFJQldloIERiUSmzw.png">
+</div>
+
+# Contenidos
+- [Capas de la arquitectura web: ¿cuáles son? y funciones](#capas-de-la-arquitectura-web-cuáles-son-y-funciones)
+- [Plataformas web: LAMP y WISA](#plataformas-web-lamp-y-wisa)
+- [Instalación de servidor web APACHE](#instalación-de-servidor-web-apache)
+  - [1. Actualizar repositorio e instalación desde la terminal](#1-actualizar-repositorio-e-instalación-desde-la-terminal)
+  - [2. Comprobamos la instalación desde la terminal](#2-comprobamos-la-instalación-desde-la-terminal)
+  - [3. Comprobamos la instalación desde navegador](#3-comprobamos-la-instalación-desde-navegador)
+  - [4. Cambio del puerto de escucha de Apache](#4-cambio-del-puerto-de-escucha-de-apache)
+- [Instalación de Tomcat](#instalación-de-tomcat)
+  - [1. Instalación de Java](#1-instalación-de-java)
+  - [2. Creación de usuario Tomcat](#2-creación-de-usuario-tomcat)
+  - [3. Descarga y extracción del paquete Tomcat](#3-descarga-y-extracción-del-paquete-tomcat)
+  - [4. Configuración del Tomcat](#4-configuración-del-tomcat)
+  - [5. Comprobación de Tomcat](#5-comprobación-de-tomcat)
+
 
 ## Capas de la arquitectura web: ¿cuáles son? y funciones
 
