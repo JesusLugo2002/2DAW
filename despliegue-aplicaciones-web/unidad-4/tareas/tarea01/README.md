@@ -43,4 +43,7 @@ Al igual que un directorio con sus ficheros de configuración ubicado en `/etc/p
     <img src="img/etc-directory.png">
 </div>
 
+> [!WARNING]
+> Antes de seguir con la práctica y la posterior edición del fichero `proftpd.conf` haremos una copia de seguridad del mismo con `cp /etc/proftpd/proftpd.conf /etc/proftpd/proftpd.conf.copia`.
+
 </div>
