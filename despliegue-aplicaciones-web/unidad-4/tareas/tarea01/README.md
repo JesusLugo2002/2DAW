@@ -2,7 +2,18 @@
 
 <div align=justify>
 
-## Contenidos
+<div align=center>
+    <img src="./img/cover.gif" width="50%">
+</div>
+
+# Contenidos
+
+- [Descarga e instalación del paquete proFTP](#descarga-e-instalación-del-paquete-proftp)
+- [Comprobación de los cambios del sistema](#comprobación-de-los-cambios-del-sistema)
+- [Edición del fichero de configuración](#edición-del-fichero-de-configuración)
+- [Conexión al servidor FTP](#conexión-al-servidor-ftp)
+- [Nueva configuración del servidor FTP](#nueva-configuración-del-servidor-ftp)
+
 
 ## Descarga e instalación del paquete proFTP
 
