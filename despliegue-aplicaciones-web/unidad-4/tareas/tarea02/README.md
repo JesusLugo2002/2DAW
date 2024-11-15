@@ -59,3 +59,21 @@ xferlog_file=/var/log/vsftpd.log
 ```sh
 sudo openssl req -x509 -nodes -days 365 -newkey isa:1024 -keyout /etc/ssl/private/vsftpd.key -out /etc/ssl/certs/vsftpd.pem
 ```
+
+Aqui despliego el funcionamiento del comando anterior:
+
+- **openssl**: Este es un programa que se usa para manejar cosas de seguridad, como crear certificados y claves. Piensa en él como un candado digital.
+
+- **req**: Esto le dice a OpenSSL que quieres hacer una solicitud, o sea, que quieres crear un nuevo certificado.
+
+- -**x509**: Este es un tipo de certificado que es bastante común. Es como decirle que quieres un certificado que sea válido por un tiempo específico.
+
+- -**nodes**: Esto significa que no quieres que la clave privada esté protegida con una contraseña. O sea, que si alguien tiene acceso a la clave, puede usarla sin pedirte que le digas la clave. A veces es más fácil, pero hay que tener cuidado.
+
+- **-days 365**: Aquí le estás diciendo que el certificado sea válido por 365 días, o sea, un año. Después de eso, tendrás que crear uno nuevo.
+
+- **-newkey rsa:1024**: Esto es para crear una nueva clave. "rsa:1024" significa que la clave va a ser del tipo RSA y tendrá un tamaño de 1024 bits. Es como el nivel de seguridad de tu candado.
+
+- **-keyout /etc/ssl/private/vsftpd.key**: Aquí le dices a OpenSSL dónde guardar la clave privada que acabas de crear. En este caso, la estás guardando en una carpeta que se llama "private" dentro de "ssl". Es como guardar tu llave en un lugar seguro.
+
+- **-out /etc/ssl/certs/vsftpd.pem**: Y aquí le indicas dónde guardar el certificado que generaste. Lo estás guardando en una carpeta de "certs". Este es el documento que le dice a otros que tu conexión es segura.
