@@ -5,7 +5,7 @@
 <template>
     <div id="ejer1">
         <h1>Ejercicio 01</h1>
-        <h3>Hello world!</h3>
+        <h3>{{ message }}</h3>
         <p>Random number: {{ num }}</p>
     </div>
 </template>
