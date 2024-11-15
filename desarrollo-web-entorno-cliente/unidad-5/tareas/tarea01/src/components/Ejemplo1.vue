@@ -3,10 +3,16 @@
 </script>
 
 <template>
-    <h1>Ejercicio 01</h1>
-    <h2>Hello world!</h2>
-    <p>This is my random number -> {{ num }}</p>
+    <div id="ejer1">
+        <h1>Ejercicio 01</h1>
+        <h3>Hello world!</h3>
+        <p>Random number: {{ num }}</p>
+    </div>
 </template>
 
 <style>
+    #ejer1 {
+        padding: 10px;
+        background-color: lightgreen;
+    }
 </style>
