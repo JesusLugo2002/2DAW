@@ -23,4 +23,3 @@
   <hr>
   <Ejemplo7/>
 </template>
-

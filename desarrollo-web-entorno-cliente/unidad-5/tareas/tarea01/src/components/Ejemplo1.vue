@@ -1,4 +1,5 @@
 <script setup>
+    const message = 'Hello world!'
     const num = Math.floor((Math.random() * 6) + 1)
 </script>
 
@@ -10,7 +11,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
     #ejer1 {
         padding: 10px;
         background-color: lightgreen;
