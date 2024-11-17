@@ -10,11 +10,11 @@
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Sobre mi</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Habilidades</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Experiencias</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+        <li class="nav-item"><RouterLink to="/about">Sobre mi</RouterLink></li>
+        <li class="nav-item"><RouterLink to="/projects">Proyectos</RouterLink></li>
+        <li class="nav-item"><RouterLink to="/skills">Habilidades</RouterLink></li>
+        <li class="nav-item"><RouterLink to="/experience">Experiencias</RouterLink></li>
+        <li class="nav-item"><RouterLink to="/contact">Contacto</RouterLink></li>
       </ul>
     </header>
 </template>

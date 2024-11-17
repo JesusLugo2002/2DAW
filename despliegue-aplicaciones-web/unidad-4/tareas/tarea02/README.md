@@ -1,6 +1,16 @@
 # Práctica de instalación de vsFTP
 
+<div align=center>
+    <img src="./img/cover.gif">
+</div
+
 # Contenidos
+
+- [Descarga e instalación del paquete _vsftpd_](#descarga-e-instalación-del-paquete-vsftpd)
+- [Configuración inicial](#configuración-inicial)
+- [Añadir un certificado SSL al servidor](#añadir-un-certificado-ssl-al-servidor)
+- [Configuración del certificado SSL](#configuración-del-certificado-ssl)
+
 
 ## Descarga e instalación del paquete _vsftpd_
 
@@ -77,3 +87,19 @@ Aqui despliego el funcionamiento del comando anterior:
 - **-keyout /etc/ssl/private/vsftpd.key**: Aquí le dices a OpenSSL dónde guardar la clave privada que acabas de crear. En este caso, la estás guardando en una carpeta que se llama "private" dentro de "ssl". Es como guardar tu llave en un lugar seguro.
 
 - **-out /etc/ssl/certs/vsftpd.pem**: Y aquí le indicas dónde guardar el certificado que generaste. Lo estás guardando en una carpeta de "certs". Este es el documento que le dice a otros que tu conexión es segura.
+
+## Configuración del certificado SSL
+
+Una vez tenemos nuestro SSL solicitado y creado, iremos nuevamente al fichero de configuración `vsftpd.conf` para añadir los ajustes necesarios. Nos vamos casi al final del fichero y nos encontraremos con unas directrices que debemos ajustar.
+
+```sh
+# Configurar ubicación del certificado generado
+rsa_cert_file=/etc/ssl/certs/vsftpd.pem
+# Configurar ubicación de la clave privada generada
+rsa_private_key_file=/etc/ssl/private/vsftpd.pem
+# Habilitar el uso de SSL
+ssl_enable=YES
+```
+
+> [!NOTE]
+> Tras este cambio, como cualquier otro que se realice en el fichero de configuración, se deben aplicar los cambios recargando el servicio con `sudo systemctl restart vsftpd`.
