@@ -102,25 +102,8 @@ rsa_private_key_file=/etc/ssl/private/vsftpd.pem
 # Habilitar el uso de SSL
 ssl_enable=YES
 ```
+</div>
 
 > [!NOTE]
 > 
 > Tras este cambio, como cualquier otro que se realice en el fichero de configuración, se deben aplicar los cambios recargando el servicio con `sudo systemctl restart vsftpd`.
-
-</div>
-
-
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
