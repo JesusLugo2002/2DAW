@@ -104,6 +104,7 @@ ssl_enable=YES
 ```
 
 > [!NOTE]
+> 
 > Tras este cambio, como cualquier otro que se realice en el fichero de configuración, se deben aplicar los cambios recargando el servicio con `sudo systemctl restart vsftpd`.
 
 </div>
