@@ -106,8 +106,7 @@ Antes de insertar los archivos creados previamente para la actividad de XAMPP, d
 1. Nos vamos al apartado __MySQL Databases__
 2. Podemos encontrar aquí los datos que usaremos para la conexión a la base de datos mediante PHP.
 3. Creamos una nueva base de datos.
-4. Y accedemos a ella mediante la opción de __phpMyAdmin__.
-5. 
+4. Y accedemos a ella mediante la opción de __phpMyAdmin__. 
 
 </div>
 
