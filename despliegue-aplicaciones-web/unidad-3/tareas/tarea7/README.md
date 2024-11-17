@@ -107,9 +107,14 @@ Antes de insertar los archivos creados previamente para la actividad de XAMPP, d
 2. Podemos encontrar aquí los datos que usaremos para la conexión a la base de datos mediante PHP.
 3. Creamos una nueva base de datos.
 4. Y accedemos a ella mediante la opción de __phpMyAdmin__.
+5. 
+
+</div>
 
 > [!NOTE]  
 > La interfaz de phpMyAdmin es similar a la usada previamente para las actividades de XAMPP, si tienen duda, pueden ver este [__apartado anterior__](../tarea4/README.md#creación-de-tablas-en-la-base-de-datos).
+
+<div align=justify>
 
 ## Adaptación de ficheros
 
