@@ -115,3 +115,15 @@ Regresamos a nuestro directorio de los sitios disponibles de Apache2 (`/etc/apac
 sudo cp default-ssl.conf prueba1-ssl.conf
 sudo cp default-ssl.conf prueba2-ssl.conf
 ```
+
+Y dentro de los ficheros duplicados, modificamos (y añadimos) las siguientes directivas:
+
+1. `<VirtualHost pruebaX.com:443>`
+2. `ServerName "pruebaX.com"`
+3. `SSLEngine on`
+4. `SSLCertificateFile /etc/apache2/ssl/server.crt`
+5. `SSLCertificateKeyFile /etc/apache2/ssl/server.key`
+
+Ya en teoría estaría nuestro host virtual securizado. Para realizar las comprobaciones, primeramente intentamos habilitar los hosts con `sudo a2ensite pruebaX.com.conf` (aunque ya deberia estar habilitada por la práctica anterior); luego comprobamos que la sintaxis usada en los ficheros de configuración sea correcta con `sudo apache2ctl configtest`, y si todo va bien, recargamos y aplicamos cambios con `sudo apache2ctl restart`.
+
+A este punto, ya podriamos acceder a nuestro host virtual desde el navegador con `https://prueba1.com` y ver el certificado SSL que hemos creado.
