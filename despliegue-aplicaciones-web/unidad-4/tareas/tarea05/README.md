@@ -1,6 +1,17 @@
 # Configuración de Apache2: hosts virtuales y certificados SSL
 
+<div align=justify>
+
 # Contenidos
+
+- [Introducción](#introducción)
+- [Creación de la estructura necesaria de los hosts](#creación-de-la-estructura-necesaria-de-los-hosts)
+- [Creación de los hosts virtuales](#creación-de-los-hosts-virtuales)
+  - [Directrices de configuración](#directrices-de-configuración)
+- [Configuración inicial para la certificación SSL](#configuración-inicial-para-la-certificación-ssl)
+- [Generación de certificados](#generación-de-certificados)
+- [Habilitación de SSL en los hosts virtuales](#habilitación-de-ssl-en-los-hosts-virtuales)
+
 
 ## Introducción
 
@@ -127,3 +138,9 @@ Y dentro de los ficheros duplicados, modificamos (y añadimos) las siguientes di
 Ya en teoría estaría nuestro host virtual securizado. Para realizar las comprobaciones, primeramente intentamos habilitar los hosts con `sudo a2ensite pruebaX.com.conf` (aunque ya deberia estar habilitada por la práctica anterior); luego comprobamos que la sintaxis usada en los ficheros de configuración sea correcta con `sudo apache2ctl configtest`, y si todo va bien, recargamos y aplicamos cambios con `sudo apache2ctl restart`.
 
 A este punto, ya podriamos acceder a nuestro host virtual desde el navegador con `https://prueba1.com` y ver el certificado SSL que hemos creado.
+
+</div>
+
+> [!NOTE]
+> Puede que a pesar de todo esto no funcione, en dicho caso, comprueba que tienes 'Apache' permitido en el Firewall del sistema. (Creeme, lo digo por experiencia).
+
