@@ -97,4 +97,21 @@ Nos iremos a nuestro directorio creado `/etc/apache2/ssl` y ejecutaremos los sig
 ```sh
 # Primero generamos la clave privada (-out indica el nombre de la clave, y 2048 se refiere a la longitud de la misma)
 sudo openssl genrsa -out server.key 2048
+
+# Ahora generamos el fichero CSR (Certificate Signment Request)
+sudo openssl req -new -key server.key -out server.csr
+
+# Y por último, generamos el certificado autofirmado
+sudo openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt 
+```
+
+Una vez obtenidos los ficheros necesarios, habilitaremos los mismos en nuestros hosts virtuales
+
+## Habilitación de SSL en los hosts virtuales
+
+Regresamos a nuestro directorio de los sitios disponibles de Apache2 (`/etc/apache2/sites-available`) y duplicaremos el fichero de configuración de SSL por defecto para asignarlo a nuestros hosts virtuales.
+
+```sh
+sudo cp default-ssl.conf prueba1-ssl.conf
+sudo cp default-ssl.conf prueba2-ssl.conf
 ```
