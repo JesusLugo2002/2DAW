@@ -17,10 +17,15 @@
 - [Ejercicio 7. Contraste bajo](#ejercicio-7-contraste-bajo)
   - [Solución](#solución-6)
 - [Ejercicio 8. Lista desplegable sin indicar su estado](#ejercicio-8-lista-desplegable-sin-indicar-su-estado)
+  - [Solución](#solución-7)
 - [Ejercicio 9. Página con contenido multimedia](#ejercicio-9-página-con-contenido-multimedia)
+  - [Solución](#solución-8)
 - [Ejercicio 10. Página dinámica sin accesibilidad](#ejercicio-10-página-dinámica-sin-accesibilidad)
+  - [Solución](#solución-9)
 - [Ejercicio 11. Página web de un producto](#ejercicio-11-página-web-de-un-producto)
+  - [Solución](#solución-10)
 - [Ejercicio 12. Blog con múltiples secciones](#ejercicio-12-blog-con-múltiples-secciones)
+  - [Solución](#solución-11)
 - [Ejercicio 13. Formulario de inscripción](#ejercicio-13-formulario-de-inscripción)
 - [Ejercicio 14. Tabla de datos compleja](#ejercicio-14-tabla-de-datos-compleja)
 - [Ejercicio 15. Menú interactivo](#ejercicio-15-menú-interactivo)
@@ -211,18 +216,22 @@ Añadir encabezados con una nueva fila (`<tr>`) y destacando las columnas con `<
 <body>
   <h1>Lista de Precios</h1>
   <table>
-    <tr>
-      <th>Producto</th>
-      <th>Precio</th>
-    </tr>
-    <tr>
-      <td>Producto 1</td>
-      <td>10 USD</td>
-    </tr>
-    <tr>
-      <td>Producto 2</td>
-      <td>20 USD</td>
-    </tr>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Producto 1</td>
+        <td>10 USD</td>
+      </tr>
+      <tr>
+        <td>Producto 2</td>
+        <td>20 USD</td>
+      </tr>
+    </tbody>
   </table>
 </body>
 </html>
@@ -249,7 +258,7 @@ Añadir encabezados con una nueva fila (`<tr>`) y destacando las columnas con `<
 
 ### Solución
 
-Indicar que el contenido de `#notificacion` será dinámico con el atributo `aria-live="polite"`
+Indicar que el contenido de `#notificacion` será dinámico con el atributo `aria-live="polite"`.
 
 ```html
 <!DOCTYPE html>
@@ -350,6 +359,37 @@ En este caso, se cambia el color del texto a uno aceptado por los estándares.
 </html>
 ```
 
+### Solución
+
+Utilizar el atributo `aria-expanded` para indicar el estado de una lista desplegable.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Menú</title>
+  <style>
+    .submenu {
+      display: none;
+    }
+    .menu:hover .submenu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Menú</h1>
+  <div class="menu">
+    Opciones
+    <div class="submenu" aria-expanded="false">
+      <a href="...">Opción 1</a>
+      <a href="...">Opción 2</a>
+    </div>
+  </div>
+</body>
+</html>
+```
+
 ## Ejercicio 9. Página con contenido multimedia
 ```html
 <!DOCTYPE html>
@@ -365,6 +405,26 @@ En este caso, se cambia el color del texto a uno aceptado por los estándares.
 </body>
 </html>
 ```
+
+### Solución
+
+Añadir una opción de subtitulado con una etiqueta `<track>`.
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Video Educativo</title>
+</head>
+<body>
+  <h1>Cómo cocinar pasta</h1>
+  <video controls>
+    <source src="video.mp4" type="video/mp4">
+    <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español"/>
+  </video>
+</body>
+</html>
+```
+
 
 ## Ejercicio 10. Página dinámica sin accesibilidad
 ```html
@@ -382,6 +442,29 @@ En este caso, se cambia el color del texto a uno aceptado por los estándares.
   <h1>Página de Notificaciones</h1>
   <button onclick="mostrarMensaje()">Mostrar Notificación</button>
   <div id="mensaje"></div>
+</body>
+</html>
+```
+
+### Solución 
+
+A este ejemplo se le puede añadir varios atributos ARIA como `aria-pressed` y `aria-live`.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Notificaciones</title>
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje').innerText = '¡Nueva notificación!';
+    }
+  </script>
+</head>
+<body>
+  <h1>Página de Notificaciones</h1>
+  <button onclick="mostrarMensaje()" aria-pressed="false">Mostrar Notificación</button>
+  <div id="mensaje" aria-live="polite"></div>
 </body>
 </html>
 ```
@@ -422,6 +505,45 @@ En este caso, se cambia el color del texto a uno aceptado por los estándares.
 </html>
 ```
 
+### Solución
+
+Aqui hay una serie de errores que se pueden solucionar, como la falta de texto alternativo, la empleabilidad del atributo `role` y la utilización de `aria-label`.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Zapatos Deportivos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .precio {
+      font-size: 20px;
+      color: red;
+    }
+    .boton {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Zapatos Deportivos</h1>
+    <div>
+      <img src="zapatos.jpg" alt="Zapatos deportivos">
+      <p aria-label="Descripción de zapatos">Los mejores zapatos para correr.</p>
+      <p aria-label="Precio de zapatos" class="precio">Precio: $50</p>
+    </div>
+    <div class="boton" onclick="alert('Producto añadido al carrito')" role="button">Añadir al carrito</div>
+  </div>
+</body>
+</html>
+```
+
 ## Ejercicio 12. Blog con múltiples secciones
 ```html
 <!DOCTYPE html>
@@ -445,6 +567,39 @@ En este caso, se cambia el color del texto a uno aceptado por los estándares.
       <a href="#">Leer más</a>
     </div>
   </div>
+</body>
+</html>
+```
+
+### Solución
+
+La utilización de etiquetas semánticas para segmentar la página web como `<main>`, `<nav>` o `<footer>`. También podría mejorarse mucho el menú de navegación y usar `<article>` para segmentar los artículos.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Mi Blog</title>
+</head>
+<body>
+  <header>
+    <nav role="navigation" aria-label="Menú principal">
+      <a href="...">Inicio</a> | <a href="...">Sobre mí</a> | <a href="...">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Artículos</h1>
+    <article>
+      <h2>Artículo Reciente</h2>
+      <p>Este es el contenido del artículo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="#">Leer más</a>
+    </article>
+    <article>
+      <h2>Otro Artículo</h2>
+      <p>Contenido del segundo artículo. Lorem ipsum dolor sit amet.</p>
+      <a href="#">Leer más</a>
+    </article>
+  </main>
 </body>
 </html>
 ```
