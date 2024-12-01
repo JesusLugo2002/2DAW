@@ -27,7 +27,9 @@
 - [Ejercicio 12. Blog con múltiples secciones](#ejercicio-12-blog-con-múltiples-secciones)
   - [Solución](#solución-11)
 - [Ejercicio 13. Formulario de inscripción](#ejercicio-13-formulario-de-inscripción)
+  - [Solución](#solución-12)
 - [Ejercicio 14. Tabla de datos compleja](#ejercicio-14-tabla-de-datos-compleja)
+  - [Solución](#solución-13)
 - [Ejercicio 15. Menú interactivo](#ejercicio-15-menú-interactivo)
 
 
@@ -636,6 +638,45 @@ La utilización de etiquetas semánticas para segmentar la página web como `<ma
 </html>
 ```
 
+### Solución
+
+Utilizar atributos `aria-required` para indicar que el *input* es de caracter obligatorio, emplear etiquetas `<label>` para los `<input>` y añadir atributo `value` a las opciones del `<select>`.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Formulario de Inscripción</title>
+</head>
+<body>
+  <h1>Formulario de Inscripción</h1>
+  <form>
+    <div>
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" placeholder="Nombre completo" aria-required="true">
+    </div>
+    <div>
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" placeholder="Correo electrónico" aria-required="true">
+    </div>
+    <div>
+      <label for="pais">Seleccionar país</label>
+      <select id="pais" aria-required="true">
+        <option value="">Seleccionar país</option>
+        <option value="mexico">México</option>
+        <option value="spain">España</option>
+        <option value="colombia">Colombia</option>
+      </select>
+    </div>
+    <div>
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+</body>
+</html>
+```
+
+
 ## Ejercicio 14. Tabla de datos compleja
 ```html
 <!DOCTYPE html>
@@ -668,6 +709,10 @@ La utilización de etiquetas semánticas para segmentar la página web como `<ma
 </body>
 </html>
 ```
+
+### Solución
+
+
 
 ## Ejercicio 15. Menú interactivo
 ```html
