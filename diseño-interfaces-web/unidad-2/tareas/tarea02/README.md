@@ -31,6 +31,7 @@
 - [Ejercicio 14. Tabla de datos compleja](#ejercicio-14-tabla-de-datos-compleja)
   - [Solución](#solución-13)
 - [Ejercicio 15. Menú interactivo](#ejercicio-15-menú-interactivo)
+  - [Solución](#solución-14)
 
 
 ## Ejercicio 1. Imagen sin texto alternativo
@@ -711,7 +712,43 @@ Utilizar atributos `aria-required` para indicar que el *input* es de caracter ob
 ```
 
 ### Solución
+Usar etiquetas de forma correcta para estructurar la tabla como `thead`, `tbody` y `th`. Así también de atributos como `role` que especifican de forma explícita la naturaleza de ciertos elementos.
 
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Reporte de Ventas</title>
+</head>
+<body>
+  <h1>Reporte Mensual de Ventas</h1>
+  <table role="table" border="1">
+    <thead>
+      <tr role="row">
+        <th scope="col">Producto</th>
+        <th scope="col">Enero</th>
+        <th scope="col">Febrero</th>
+        <th scope="col">Marzo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr role="row">
+        <td role="cell">Zapatos</td>
+        <td role="cell">100</td>
+        <td role="cell">150</td>
+        <td> role="cell"200</td>
+      </tr>
+      <tr role="row">
+        <td role="cell">Camisas</td>
+        <td role="cell">200</td>
+        <td role="cell">250</td>
+        <td role="cell">300</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+```
 
 
 ## Ejercicio 15. Menú interactivo
@@ -742,3 +779,32 @@ Utilizar atributos `aria-required` para indicar que el *input* es de caracter ob
 </body>
 </html>
 ```
+
+### Solución
+Se implementan atributos como `role` para añadirle identificación de roles a objetos no diseñados para ello, como al menú que fue implementado con un `<div>`, `aria-haspopup` para indicar que hay un menú desplegable y `tabindex = 0` para permitir que el `<div>` sea accesible mediante teclado.
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Menú Interactivo</title>
+  <style>
+    .submenu {
+      display: none;
+    }
+    .menu:hover .submenu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Menú de Opciones</h1>
+  <div class="menu" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">
+    <p>Opciones</p>
+    <div class="submenu" role="menu">
+      <p role="menuitem">Opción 1</p>
+      <p role="menuitem">Opción 2</p>
+      <p role="menuitem">Opción 3</p>
+    </div>
+  </div>
+</body>
+</html>
