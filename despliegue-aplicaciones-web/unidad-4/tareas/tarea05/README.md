@@ -1,5 +1,9 @@
 # Configuración de Apache2: hosts virtuales y certificados SSL
 
+<div align=center>
+    <img src="./img/cover.png">
+</div>
+
 <div align=justify>
 
 # Contenidos
