@@ -1,5 +1,11 @@
 # Nginx: Instalación y configuración básica
 
+<div align=center>
+    <img src="./img/cover.png">
+</div>
+
+<div align=justify>
+
 # Contenidos
 
 - [Descarga del paquete Nginx](#descarga-del-paquete-nginx)
@@ -40,3 +46,9 @@ sudo nano index.html
 ```
 
 E insertamos algo de contenido básico como un `<h1>Hello World!</h1>`. Tras ello, hacemos un `sudo systemctl restart nginx` para refrescar cambios y tendriamos todo cumplido.
+
+<div align=center>
+    <img src="./img/check-nginx.png">
+</div>
+
+</div>
