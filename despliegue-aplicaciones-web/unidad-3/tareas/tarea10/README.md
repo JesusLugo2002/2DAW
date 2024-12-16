@@ -8,9 +8,9 @@
 
 # Contenidos
 
-- [Estructura de los hosts virtuales](#estructura-de-los-hosts-virtuales)
-- [Configuración en sites-available](#configuración-en-sites-available)
-- [Configurar DNS en /etc/hosts](#configurar-dns-en-etchosts)
+- [Introducción](#introducción)
+- [Generación de certificado SSL con OpenSSL](#generación-de-certificado-ssl-con-openssl)
+- [Configuración de Nginx para habilitar SSL](#configuración-de-nginx-para-habilitar-ssl)
 
 
 ## Introducción
