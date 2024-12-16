@@ -1,9 +1,10 @@
 <script setup>
-
+  import Header from './components/Header.vue';
 </script>
 
 <template>
-  <h1>Tarea de directivas - IT</h1>
+  <Header></Header>
+  <
 </template>
 
 <style scoped>
