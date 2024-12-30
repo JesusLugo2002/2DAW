@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
-    <h1>Ejercicio 2</h1>
+    <h1>Exercise #</h1>
 </template>
