@@ -20,7 +20,6 @@ const saveAlias = (pennywise) => {
     pennywise.alias = document.getElementById('alias').value;
     alert(`Alias guardado para ${pennywise.name}`)
 }
-
 </script>
 
 <template>
@@ -29,7 +28,7 @@ const saveAlias = (pennywise) => {
         <div v-for="pennywise in pennywiseList" :key="pennywise.name" v-on:click="selectPennywise(pennywise)">
             <div class="col">
                 <div class="card p-3" :class="{ 'border-danger' : selected === pennywise }">
-                    <img :src="pennywise.name" class="card-img-top" :alt="pennywise.name">
+                    <img :src="pennywise.image" class="card-img-top" :alt="pennywise.name">
                     <div class="card-body">
                         <h5 class="card-title">{{ pennywise.name }}</h5>
                         <h5 v-if="pennywise.alias.length > 0" class="text-secondary">Alias: {{ pennywise.alias }}</h5>
