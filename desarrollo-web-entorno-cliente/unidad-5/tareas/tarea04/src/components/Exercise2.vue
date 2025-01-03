@@ -1,12 +1,13 @@
 <script setup>
     import { ref } from 'vue';
     import Balloon from './includes/Balloon.vue';
+    import Message from './includes/Message.vue';
 
     const balloonCount = ref(1)
     const showingMessage = ref(false)
 
     const switchMessage = () => {
-        showingMessage.value = !showingMessage.value
+        showingMessage.value = !showingMessage.value;
     }
 </script>
 
@@ -25,7 +26,11 @@
                 <Balloon v-for="num in balloonCount" :key="num"/>
             </div>
             <button v-if="balloonCount >= 10" class="btn btn-danger mt-5" @click="switchMessage">¿Mensaje?</button>
-            <h5 v-if="showingMessage" class="text-danger mt-5">¡Todos flotan aquí!</h5>
+            <Message v-if="showingMessage">
+                <span v-if="balloonCount <= 15">Pero podrían haber más.</span>
+                <span v-else-if="balloonCount < 20">Somos demasiados.</span>
+                <span v-else>Perfecto, ya estamos completos.</span>
+            </Message>
         </div>
     </div>
 </template>
