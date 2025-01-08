@@ -1,30 +1,25 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+  import { reactive } from 'vue';
+  import ClueList from './components/ClueList.vue';
+  import CrimeScene from './components/CrimeScene.vue';
+
+  const clues = reactive([
+    {name: "Huellas", priority: "90"},
+    {name: "Vaso roto", priority: "30"},
+    {name: "Sobre sospechoso", priority: "80"}
+  ])
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <CrimeScene>Descubierto por la hija de la victima que corrió directamente al teléfono para llamar a la policía.</CrimeScene>
+        <ClueList :clueList="clues"/>
+      </div>
+      <div class="col">
+        <h1>Interrogatorio</h1>
+      </div>
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
