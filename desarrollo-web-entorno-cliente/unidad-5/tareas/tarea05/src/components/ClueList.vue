@@ -7,8 +7,10 @@
 </script>
 
 <template>
-    <h2 class="mt-3">Las pistas encontradas son...</h2>
-    <form>
-        <Clue v-for="(clue, index) in clueList" :clueName="clue.name" :cluePriority="clue.priority" :key="index"></Clue>
-    </form>
+    <h2 class="my-3">Las pistas encontradas son...</h2>
+    <div>
+        <Clue v-for="(clue, index) in clueList" :clueName="clue.name" :cluePriority="clue.priority" :id="index" v-slot="{priority}">
+            <p class="fw-bold text-success">Importancia: {{ priority }}/100</p>
+        </Clue>
+    </div>
 </template>
