@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import AuthProvider from './components/AuthProvider.vue';
+import NavBar from './components/NavBar.vue';
+</script>
+
 <template>
-  <h1>Hello world!</h1>
+  <NavBar />
+  <AuthProvider>
+    <RouterView />
+  </AuthProvider>
 </template>
