@@ -1,6 +1,6 @@
 <script lang="ts">
 import DatabaseConnection from '@/firebase/firebase';
-import { ref } from 'vue';
+import { ref, provide, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 
 const database = new DatabaseConnection()
@@ -38,6 +38,8 @@ function generateToken() {
     sessionStorage.setItem('token', newToken);
     isAuthenticated.value = true;
     token.value = newToken;
+    provide('isAuthenticated', isAuthenticated.value)
+    provide('token', token.value)
     return newToken
 }
 
@@ -68,11 +70,24 @@ async function login(email: string, password: string) {
     if (await database.authenticate(email, password)) {
         const token = generateToken()
         alert('Has iniciado sesión, tu token de sesión es ' + token);
-        router.push('/signup');
+        router.push('/home'); // La instancia de 'router', según la terminal en navegador, está indefinida y por eso no hace la redirección
     }
 }
 
-export { signup, login }
+function logout() {
+    isAuthenticated.value = false;
+    sessionStorage.setItem('token', '')
+    token.value = ''
+    provide('isAuthenticated', isAuthenticated.value)
+    provide('token', token.value)
+    alert('Gracias por su visita en esta hermosa página. Esperamos verlo pronto.')
+}
+
+onMounted(() => {
+    // No terminé de entender lo que hacía falta hacerse con esta función.
+})
+
+export { signup, login, logout, isAuthenticated }
 </script>
 
 <template>
