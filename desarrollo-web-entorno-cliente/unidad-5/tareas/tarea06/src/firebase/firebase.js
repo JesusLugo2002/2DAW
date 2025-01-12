@@ -49,27 +49,29 @@ export default class DatabaseConnection {
 
   async userExists(email) {
     const allUsers = await this.getAllUsers()
+    let userExists = false
     if (allUsers) {
       allUsers.forEach((user) => {
         if (user.email == email) {
           console.log('Usuario encontrado!')
-          return true
+          userExists = true
         }
       })
     }
-    return false
+    return userExists
   }
 
   async authenticate(email, password) {
     const allUsers = await this.getAllUsers()
+    let isAuthenticated = false
     if (allUsers) {
       allUsers.forEach((user) => {
         if (user.email == email && user.password == password) {
           console.log('Usuario loggeado!')
-          return true
+          isAuthenticated = true
         }
       })
     }
-    return false
+    return isAuthenticated
   }
 }

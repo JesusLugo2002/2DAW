@@ -1,10 +1,12 @@
 <script lang="ts">
 import DatabaseConnection from '@/firebase/firebase';
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 const database = new DatabaseConnection()
 const isAuthenticated = ref(false);
 const token = ref('');
+const router = useRouter()
 
 function emailIsValid(email: string): boolean {
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -65,7 +67,8 @@ async function login(email: string, password: string) {
     }
     if (await database.authenticate(email, password)) {
         const token = generateToken()
-        alert('Has iniciado sesión, tu token de sesión es ' + token)
+        alert('Has iniciado sesión, tu token de sesión es ' + token);
+        router.push('/signup');
     }
 }
 
