@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Aatrox",
+    "image": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg",
+    "exp": 0,
+    "hp": 650,
+    "mp": 0,
+    "power": 0,
+    "lvl": 1
+  },
+  {
+    "name": "Aurora",
+    "image": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aurora_0.jpg",
+    "exp": 0,
+    "hp": 607,
+    "mp": 475,
+    "power": 0,
+    "lvl": 1
+  },
+  {
+    "name": "Jayce",
+    "image": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Jayce_0.jpg",
+    "exp": 0,
+    "hp": 590,
+    "mp": 375,
+    "power": 0,
+    "lvl": 1
+  },
+  {
+    "name": "Jinx",
+    "image": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Jinx_0.jpg",
+    "exp": 0,
+    "hp": 630,
+    "mp": 260,
+    "power": 0,
+    "lvl": 1
+  },
+  {
+    "name": "Varus",
+    "image": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Varus_0.jpg",
+    "exp": 0,
+    "hp": 600,
+    "mp": 320,
+    "power": 0,
+    "lvl": 1
+  }
+]
