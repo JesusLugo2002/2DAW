@@ -16,7 +16,7 @@ interface Champion {
 }
 
 const champions = ref<Champion[]>([])
-const currentChampion = useChampionStore()
+const championStore = useChampionStore()
 
 async function fetchChampionsData() {
   try {
@@ -38,10 +38,11 @@ async function fetchChampionsData() {
 }
 
 function selectChampion(champ: any) {
-  currentChampion.name = champ.name
-  currentChampion.exp = champ.exp
-  currentChampion.lvl = champ.lvl
-  currentChampion.power = champ.power
+  championStore.currentChampion = champ
+  championStore.experience = champ.exp
+  championStore.stats.hp = champ.hp
+  championStore.stats.mp = champ.mp
+  championStore.stats.lvl = champ.lvl
 }
 
 onMounted(() => {
@@ -60,7 +61,7 @@ onMounted(() => {
       />
     </div>
     <div id="champion-selected" class="row mt-3">
-      <ChampionSelected v-if="currentChampion.name != ''" :name="currentChampion.name"/>
+      <ChampionSelected v-if="championStore.currentChampion != null" :champion="championStore"/>
       <b class="text-center h3" v-else>Any champion are selected! Please choice one...</b>
     </div>
   </div>
