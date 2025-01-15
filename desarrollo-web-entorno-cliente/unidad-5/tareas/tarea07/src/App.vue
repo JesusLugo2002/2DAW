@@ -61,7 +61,7 @@ onMounted(() => {
       />
     </div>
     <div id="champion-selected" class="row mt-3">
-      <ChampionSelected v-if="championStore.currentChampion != null" :champion="championStore"/>
+      <ChampionSelected v-if="championStore.currentChampion != null" :championStore="championStore"/>
       <b class="text-center h3" v-else>Any champion are selected! Please choice one...</b>
     </div>
   </div>
