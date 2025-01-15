@@ -49,7 +49,12 @@ const power = computed(() => {
 return (stats.hp + stats.mp) * stats.lvl
 }
 
-# Pending watch(experience) to level up
+watch(experience, (newExperience) => {
+if (newExperience >= 100) {
+stats.lvl++;
+experience.value = 0
+}
+})
 
 return {
 currentChampion,
