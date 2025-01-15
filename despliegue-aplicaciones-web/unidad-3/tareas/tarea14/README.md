@@ -15,6 +15,7 @@
 - [Instalación y configuración de *phpmyadmin*](#instalación-y-configuración-de-phpmyadmin)
   - [Explicación de las directivas](#explicación-de-las-directivas)
 - [Configuración de la base de datos](#configuración-de-la-base-de-datos)
+  - [Migración de la base de datos](#migración-de-la-base-de-datos)
 - [Comprobación de funcionamiento](#comprobación-de-funcionamiento)
 
 
@@ -41,6 +42,10 @@ Ahora crearemos el directorio necesario para instalar la página web. Posteriorm
 sudo mkdir /var/www/html/lamp.com
 sudo cp * /var/www/html/lamp.com
 ```
+
+<div align=center>
+    <img src="./img/lamp-directory.png" alt="Lamp Directory">
+</div>
 
 ### Configuración en Apache del host virtual
 
@@ -177,8 +182,42 @@ CREATE DATABASE phpmyadmin;
 GRANT ALL PRIVILEGES ON *.* TO 'developer';
 ```
 
+### Migración de la base de datos
+
+Teniendo en mano el fichero **.sql** de la base de datos origen, realizamos una importación en una base de datos nueva a través de *phpmyadmin* en la siguiente pestaña después de entrar a la base de datos:
+
+<div align=center>
+    <img src="./img/import-1.png" alt="import, part 1">
+</div>
+
+<div align=center>
+    <img src="./img/import-2.png" alt="import, part 2">
+</div>
+
+Y veremos necesario cambiar la conexión mediante php del sitio web para que coincida: en este caso, el sitio web estaba desplegado en InfinityFree y ahora, al estar ubicado en el *localhost*, quedaría de la siguiente forma:
+
+```php
+# Antes
+$conn = mysqli_connect("infinity-free-host", "username", "password", "infinity-server-database");
+
+# Después
+$conn = mysqli_connect("localhost", "username", "password", "lamp-server-database");
+```
+
+Esto se aplicaría a todas las conexiones previamente presentes en los ficheros **.php**
+
 ## Comprobación de funcionamiento
 
-Podemos acceder ahora a nuestro sitio web a través de [lamp.com](lamp.com) o [www.lamp.com](www.lamp.com), así como también al panel de *phpmyadmin* con [lamp.com/phpmyadmin](lamp.com/phpmyadmin).
+Podemos acceder ahora a nuestro sitio web a través de [lamp.com](lamp.com) o [www.lamp.com](www.lamp.com). 
+
+<div align=center>
+    <img src="./img/check-lamp-website.png" alt="Checking Lamp Website">
+</div>
+
+Así como también al panel de *phpmyadmin* con [lamp.com/phpmyadmin](lamp.com/phpmyadmin).
+
+<div align=center>
+    <img src="./img/phpmyadmin.png" alt="phpmyadmin">
+</div>
 
 </div>
