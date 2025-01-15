@@ -31,7 +31,7 @@ async function fetchChampionsData() {
         return (champ.hp + champ.mp) * champ.lvl
       })
       champions.value.push(newChamp)
-    });
+    })
   } catch (error) {
     console.error('Error obteniendo datos de champions.json: ', error)
   }
@@ -61,12 +61,13 @@ onMounted(() => {
       />
     </div>
     <div id="champion-selected" class="row mt-3">
-      <ChampionSelected v-if="championStore.currentChampion != null" :championStore="championStore"/>
+      <ChampionSelected
+        v-if="championStore.currentChampion != null"
+        :championStore="championStore"
+      />
       <b class="text-center h3" v-else>Any champion are selected! Please choice one...</b>
     </div>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
