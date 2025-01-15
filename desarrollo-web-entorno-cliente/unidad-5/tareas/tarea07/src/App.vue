@@ -16,6 +16,7 @@ interface Champion {
 }
 
 const champions = ref<Champion[]>([])
+const championIsSelected = ref(false)
 const championStore = useChampionStore()
 
 async function fetchChampionsData() {
@@ -38,6 +39,7 @@ async function fetchChampionsData() {
 }
 
 function selectChampion(champ: any) {
+  championIsSelected.value = true
   championStore.currentChampion = champ
   championStore.experience = champ.exp
   championStore.stats.hp = champ.hp
@@ -52,8 +54,9 @@ onMounted(() => {
 
 <template>
   <div class="container">
-    <div id="champion-selector" class="row row-cols-5 mt-5">
-      <Champion
+    <div id="champion-selector" v-if="!championIsSelected" class="row row-cols-5 mt-5">
+      <Champ
+        ion
         v-for="(champ, index) in champions"
         :champ="champ"
         :index="index"
@@ -61,10 +64,7 @@ onMounted(() => {
       />
     </div>
     <div id="champion-selected" class="row mt-3">
-      <ChampionSelected
-        v-if="championStore.currentChampion != null"
-        :championStore="championStore"
-      />
+      <ChampionSelected v-if="championIsSelected" :championStore="championStore" />
       <b class="text-center h3" v-else>Any champion are selected! Please choice one...</b>
     </div>
   </div>

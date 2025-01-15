@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { ref, reactive, computed, watch } from 'vue'
 
 export const useChampionStore = defineStore('champion', () => {
-  const currentChampion = ref(null)
+  const currentChampion = reactive({})
   const experience = ref(0)
 
   const stats = reactive({
@@ -13,12 +13,12 @@ export const useChampionStore = defineStore('champion', () => {
 
   function increaseExp(value: number) {
     if (currentChampion) {
-      experience.value += 10
+      experience.value += value
     }
   }
 
   function decreaseExp(value: number) {
-    experience.value -= 10
+    experience.value -= value
   }
 
   const power = computed(() => {
