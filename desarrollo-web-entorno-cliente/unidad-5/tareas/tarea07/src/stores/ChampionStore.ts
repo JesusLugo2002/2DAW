@@ -26,6 +26,10 @@ export const useChampionStore = defineStore('champion', () => {
   })
 
   watch(experience, (newExperience) => {
+    if (newExperience < 0) {
+      alert('The minimum experience points is zero!')
+      experience.value = 0
+    }
     if (newExperience >= 100) {
       alert('The champion leveled up!')
       stats.lvl++

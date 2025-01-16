@@ -55,7 +55,7 @@ onMounted(() => {
 <template>
   <div class="container">
     <div id="champion-selector" v-if="!championIsSelected" class="row row-cols-5 mt-5">
-      <Champ
+      <Champion
         ion
         v-for="(champ, index) in champions"
         :champ="champ"
