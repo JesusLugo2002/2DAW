@@ -1,0 +1,14 @@
+$color_1: #fff;
+$color_2: #333;
+
+button {
+    background-color: $color_2;  
+    color: $color_1;  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;
+    &:hover {
+        background-color: $color_1;  
+        color: $color_2;
+    }
+}

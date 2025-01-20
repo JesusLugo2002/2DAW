@@ -1,0 +1,12 @@
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=ejer11.css.map */

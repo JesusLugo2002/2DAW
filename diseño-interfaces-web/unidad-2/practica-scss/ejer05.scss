@@ -1,0 +1,28 @@
+$color_1: #333;
+$color_2: #fff;
+
+.container {
+    width: 100%;  
+    max-width: 1200px;  
+    margin: 0 auto;
+    h1 {
+        font-size: 24px;  
+        color: $color_1;
+    }
+    p {
+        font-size: 16px;  
+        color: #666;
+    }
+    .btn:hover {
+        background-color: $color_2;  
+        color: $color_1; 
+    }
+}
+
+.btn {
+    background-color: $color_1;  
+    color: $color_2;  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;
+}

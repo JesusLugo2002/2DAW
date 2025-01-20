@@ -1,0 +1,19 @@
+nav {
+    ul {
+        li {
+            display: inline-block;  
+            margin-right: 20px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+ul {
+    li {
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+    }
+}

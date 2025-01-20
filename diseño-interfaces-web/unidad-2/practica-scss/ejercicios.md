@@ -33,21 +33,6 @@ button:hover {
 }
 ```
 
-**Respuesta**
-```scss
-button {
-    background-color: #333;  
-    color: #fff;  
-    border: none;  
-    padding: 10px 20px;  
-    font-size: 16px;
-    &:hover {
-        background-color: #fff;  
-        color: #333;
-    }
-}
-```
-
 ### Ejercicio 2
 ```css
 .container {  
@@ -65,24 +50,6 @@ button {
 }  
 ```
 
-**Respuesta**
-
-```scss
-.container {
-    width: 100%;  
-    max-width: 1200px;  
-    margin: 0 auto;
-    h1 {
-        font-size: 24px;  
-        color: #333; 
-    }
-    p {
-        font-size: 16px;  
-        color: #666; 
-    }
-}
-```
-
 ### Ejercicio 3
 ```css
 nav ul li {  
@@ -98,25 +65,6 @@ nav ul li a:hover {
 }
 ```
 
-**Respuesta**
-
-```scss
-nav {
-    ul {
-        li {
-            display: inline-block;  
-            margin-right: 20px;
-            a {
-                color: #333; 
-                text-decoration: none;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
-```
 ### Ejercicio 4
 ```css
 .container {  
@@ -136,25 +84,6 @@ nav {
 }
 ```
 
-**Respuesta**
-
-```scss
-.container {
-    width: 100%;  
-    max-width: 1200px;  
-    margin: 0 auto;
-    .row {
-        display: flex;  
-        justify-content: space-between;
-        .col {
-            width: 30%;  
-            background-color: #f2f2f2;  
-            padding: 20px;  
-            margin-bottom: 20px;
-        }
-    }
-}
-```
 ### Ejercicio 5
 ```css
 .container {  
@@ -183,157 +112,149 @@ nav {
 }
 ```
 
-**Respuesta**
-
-```scss
-.container {
+### Ejercicio 6
+```css
+.container {  
     width: 100%;  
     max-width: 1200px;  
-    margin: 0 auto;
-    h1 {
-        font-size: 24px;  
-        color: #333;
-    }
-    p {
-        font-size: 16px;  
-        color: #666;
-    }
-    .btn:hover {
-        background-color: #fff;  
-        color: #333; 
-    }
-}
-
-.btn {
+    margin: 0 auto;  
+}  
+.container h1 {  
+    font-size: 24px;  
+    color: #333;  
+}  
+.container p {  
+    font-size: 16px;  
+    color: #666;  
+}  
+.container .btn {  
     background-color: #333;  
     color: #fff;  
     border: none;  
     padding: 10px 20px;  
-    font-size: 16px;
+    font-size: 16px;  
+}  
+.container .btn:hover {  
+    background-color: #fff;  
+    color: #333;  
+}  
+```
+
+### Ejercicio 7
+```css
+nav ul li {  
+    display: inline-block;  
+    margin-right: 20px;  
+}  
+ul li a {  
+    color: #333;  
+    text-decoration: none;  
+}  
+nav ul a:hover {  
+    text-decoration: underline;  
 }
 ```
 
-### Ejercicio 6  
+### Ejercicio 8 
+```css
 .container {  
-width: 100%;  
-max-width: 1200px;  
-margin: 0 auto;  
-}  
-.container h1 {  
-font-size: 24px;  
-color: #333;  
-}  
-.container p {  
-font-size: 16px;  
-color: #666;  
-}  
-.container .btn {  
-background-color: #333;  
-color: #fff;  
-border: none;  
-padding: 10px 20px;  
-font-size: 16px;  
-}  
-.container .btn:hover {  
-background-color: #fff;  
-color: #333;  
-}  
-### Ejercicio 7  
-nav ul li {  
-display: inline-block;  
-margin-right: 20px;  
-}  
-ul li a {  
-color: #333;  
-text-decoration: none;  
-}  
-nav ul a:hover {  
-text-decoration: underline;  
-}  
-### Ejercicio 8  
-.container {  
-width: 100%;  
-max-width: 1200px;  
-margin: 0 auto;  
+    width: 100%;  
+    max-width: 1200px;  
+    margin: 0 auto;  
 }  
 .container .row {  
-display: flex;  
-justify-content: space-between;  
+    display: flex;  
+    justify-content: space-between;  
 }  
 .container .row .col {  
-width: 30%;  
-background-color: #f2f2f2;  
-padding: 20px;  
-margin-bottom: 20px;  
+    width: 30%;  
+    background-color: #f2f2f2;  
+    padding: 20px;  
+    margin-bottom: 20px;  
 }  
+```
+
 ### Ejercicio 9  
+```css
 .container {  
-width: 100%;  
-max-width: 1200px;  
-margin: 0 auto;  
+    width: 100%;  
+    max-width: 1200px;  
+    margin: 0 auto;  
 }  
 .container h1 {  
-font-size: 24px;  
-color: #333;  
+    font-size: 24px;  
+    color: #333;  
 }  
 .container p {  
-font-size: 16px;  
-color: #666;  
+    font-size: 16px;  
+    color: #666;  
 }  
 .container .btn {  
-background-color: #333;  
-color: #fff;  
-border: none;  
-padding: 10px 20px;  
-font-size: 16px;  
+    background-color: #333;  
+    color: #fff;  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;  
 }  
 .container .btn:hover {  
-background-color: #fff;  
-color: #333;  
+    background-color: #fff;  
+    color: #333;  
 }  
+```
+
 ### Ejercicio 10  
+```css
 .container {  
-width: 100%;  
-max-width: 1200px;  
-margin: 0 auto;  
+    width: 100%;  
+    max-width: 1200px;  
+    margin: 0 auto;  
 }  
 .container h1 {  
-font-size: 24px;  
-color: #333;  
+    font-size: 24px;  
+    color: #333;  
 }  
 .container p {  
-font-size: 16px;  
-color: #666;  
+    font-size: 16px;  
+    color: #666;  
 }  
+```
+
 ### Ejercicio 11  
+```css
 nav ul li {  
-display: inline-block;  
-margin-right: 20px;  
+    display: inline-block;  
+    margin-right: 20px;  
 }  
 nav ul li a {  
-color: #333;  
-text-decoration: none;  
+    color: #333;  
+    text-decoration: none;  
 }  
 ul li a:hover {  
-text-decoration: underline;  
+    text-decoration: underline;  
 }  
-### Ejercicio 12  
+```
+
+### Ejercicio 12 
+```css 
 .container {  
-width: 100%;  
-max-width: 1200px;  
-margin: 0 auto;  
+    width: 100%;  
+    max-width: 1200px;  
+    margin: 0 auto;  
 }  
 .container .row {  
-display: flex;  
-justify-content: space-between;  
+    display: flex;  
+    justify-content: space-between;  
 }  
 .container .row .col {  
-width: 30%;  
-background-color: #f2f2f2;  
-padding: 20px;  
-margin-bottom: 20px;  
+    width: 30%;  
+    background-color: #f2f2f2;  
+    padding: 20px;  
+    margin-bottom: 20px;  
 }  
-### Ejercicio 13  
+```
+
+### Ejercicio 13 
+```scss 
 .container {  
 width: 100%;  
 max-width: 1200px;  
@@ -350,6 +271,8 @@ font-size: 16px;
 background-color: #fff;  
 color: #333;  
 }  
+```
+
 ### Ejercicio 14  
 .container {  
 width: 100%;  
