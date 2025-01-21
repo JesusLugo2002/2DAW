@@ -1,8 +1,10 @@
 @import '_colors';
 @import '_body';
 @import '_header';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:wght@400;500&display=swap');
 
 body {
     margin: 0;
     background-color: $primary;
+    font-family: 'Dancing Script', serif;
 }
