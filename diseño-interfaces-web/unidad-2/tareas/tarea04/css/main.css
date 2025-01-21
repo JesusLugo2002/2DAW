@@ -1,9 +1,35 @@
-#sass-logo {
-  width: 60px;
-  height: 40px;
-}
-
 nav {
+  background-color: #111111;
+  padding: 0px 50px;
   display: flex;
   justify-content: space-between;
+}
+nav div {
+  align-items: center;
+  display: flex;
+}
+nav div #icon {
+  background-image: url("/img/sass.png");
+  background-size: cover;
+  width: 60px;
+  height: 40px;
+  padding-left: 20px;
+}
+nav div #nav-options {
+  display: flex;
+}
+nav div #nav-options li {
+  font-weight: bold;
+  color: #A4547C;
+  list-style-type: none;
+  padding-left: 20px;
+}
+nav p {
+  font-weight: bold;
+  color: #A4547C;
+}
+
+body {
+  margin: 0;
+  background-color: #F9F9F9;
 }/*# sourceMappingURL=main.css.map */

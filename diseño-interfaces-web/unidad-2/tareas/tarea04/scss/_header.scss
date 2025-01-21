@@ -1,9 +1,32 @@
-#sass-logo {
-    width: 60px;
-    height: 40px;
-}
+@import '_colors';
 
 nav {
+    background-color: $dark;
+    padding: 0px 50px;
     display: flex;
     justify-content: space-between;
+    div {
+        align-items: center;
+        display: flex;
+        #icon {
+            background-image: url('/img/sass.png');
+            background-size: cover;
+            width: 60px;
+            height: 40px;
+            padding-left: 20px;
+        }
+        #nav-options {
+            display: flex;
+            li {
+                font-weight: bold;
+                color: $secondary;
+                list-style-type: none;
+                padding-left: 20px;
+            }
+        }
+    }
+    p {
+        font-weight: bold;
+        color: $secondary;
+    }
 }

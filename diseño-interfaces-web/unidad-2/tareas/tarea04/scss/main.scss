@@ -1,3 +1,8 @@
 @import '_colors';
 @import '_body';
 @import '_header';
+
+body {
+    margin: 0;
+    background-color: $primary;
+}
