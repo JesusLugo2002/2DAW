@@ -1,3 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:wght@400;500&display=swap");
+#card-container {
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#card-container .card {
+  flex: 1 1 500px;
+  height: 300px;
+  background-color: #111111;
+}
+#card-container .card-title {
+  margin-bottom: 0;
+  color: #A4547C;
+  font-size: 32px;
+  font-weight: bold;
+}
+#card-container .card-info {
+  margin-top: 10px;
+  color: #a58484;
+}
+#card-container .card-body {
+  color: #F9F9F9;
+}
+
 nav {
   background-color: #111111;
   padding: 0px 50px;
@@ -20,16 +46,25 @@ nav div #nav-options {
 }
 nav div #nav-options li {
   font-weight: bold;
-  color: #A4547C;
   list-style-type: none;
   padding-left: 20px;
 }
+nav div #nav-options li a {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  color: #A4547C;
+  text-decoration: none;
+}
 nav p {
   font-weight: bold;
+  font-size: 24px;
+  margin: 0;
   color: #A4547C;
 }
 
 body {
   margin: 0;
   background-color: #F9F9F9;
+  font-family: "Dancing Script", serif;
 }/*# sourceMappingURL=main.css.map */

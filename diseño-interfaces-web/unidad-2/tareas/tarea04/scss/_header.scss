@@ -1,7 +1,7 @@
-@import '_colors';
+$font-size: 24px;
 
 nav {
-    background-color: $dark;
+    background-color: $dark-color;
     padding: 0px 50px;
     display: flex;
     justify-content: space-between;
@@ -9,8 +9,10 @@ nav {
         align-items: center;
         display: flex;
         #icon {
-            background-image: url('/img/sass.png');
-            background-size: cover;
+            background: {
+                image: url('/img/sass.png');
+                size: cover;
+            }
             width: 60px;
             height: 40px;
             padding-left: 20px;
@@ -19,14 +21,26 @@ nav {
             display: flex;
             li {
                 font-weight: bold;
-                color: $secondary;
                 list-style-type: none;
                 padding-left: 20px;
+                a {
+                    font: {
+                        weight: bold;
+                        size: $font-size;
+                    }
+                    margin: 0;
+                    color: $secondary-color;
+                    text-decoration: none;
+                }
             }
         }
     }
     p {
-        font-weight: bold;
-        color: $secondary;
+        font: {
+            weight: bold;
+            size: $font-size;
+        }
+        margin: 0;
+        color: $secondary-color;
     }
 }

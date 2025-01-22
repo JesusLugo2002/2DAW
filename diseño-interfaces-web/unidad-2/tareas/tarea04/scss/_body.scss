@@ -1,0 +1,28 @@
+$common-margin: 15px;
+
+#card-container {
+    margin: $common-margin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $common-margin;
+    .card {
+        flex: 1 1 500px;
+        height: 300px;
+        background-color: $dark-color;
+        &-title {
+            margin-bottom: 0;
+            color: $secondary-color;
+            font: {
+                size: 32px;
+                weight: bold;
+            }
+        }
+        &-info {
+            margin-top: 10px;
+            color: $info-color;
+        }
+        &-body {
+            color: $primary-color;
+        }
+    }
+}
