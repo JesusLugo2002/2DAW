@@ -1,23 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:wght@400;500&display=swap");
+body {
+  margin: 0;
+  background-color: #F9F9F9;
+  font-family: "Dancing Script", serif;
+}
+
 #card-container {
-  margin: 15px;
   display: flex;
   flex-wrap: wrap;
+  margin: 15px;
   gap: 15px;
 }
 #card-container .card {
+  display: flex;
   flex: 1 1 500px;
   height: 300px;
-  background-color: #111111;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #A4547C;
   border-radius: 20px;
-  display: flex;
+  box-shadow: 0px 0px 15px #111111;
+  background-color: #111111;
 }
-#card-container .card-image {
+#card-container .card #image-1 {
   width: 40%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url("/img/volcan1.jpeg");
+  border-radius: 20px 0px 0px 20px;
+}
+#card-container .card #image-2 {
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/img/volcan2.jpeg");
+  border-radius: 20px 0px 0px 20px;
+}
+#card-container .card #image-3 {
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/img/volcan3.jpeg");
+  border-radius: 20px 0px 0px 20px;
+}
+#card-container .card #image-4 {
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/img/volcan4.jpeg");
+  border-radius: 20px 0px 0px 20px;
 }
 #card-container .card-content {
   width: 60%;
@@ -35,19 +74,6 @@
 }
 #card-container .card-body {
   color: #F9F9F9;
-}
-
-#image-1 {
-  background-image: url("/img/volcan1.jpeg");
-}
-#image-2 {
-  background-image: url("/img/volcan2.jpeg");
-}
-#image-3 {
-  background-image: url("/img/volcan3.jpeg");
-}
-#image-4 {
-  background-image: url("/img/volcan4.jpeg");
 }
 
 nav {
@@ -87,10 +113,4 @@ nav p {
   font-size: 24px;
   margin: 0;
   color: #A4547C;
-}
-
-body {
-  margin: 0;
-  background-color: #F9F9F9;
-  font-family: "Dancing Script", serif;
 }/*# sourceMappingURL=main.css.map */
