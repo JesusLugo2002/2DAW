@@ -1,6 +1,17 @@
 # OpenLDAP: Instalación y configuración
 
+<div align=center>
+    <img src="/img/cover.png" alt="cover">
+</div>
+
+<div align=justify>
+
 # Contenidos
+
+- [Introducción](#introducción)
+- [Instalación de los paquetes](#instalación-de-los-paquetes)
+- [Configuración de los paquetes](#configuración-de-los-paquetes)
+
 
 ## Introducción
 
@@ -67,3 +78,5 @@ entryCSN: 20250129154312.833672Z#000000#000#000000
 modifiersName: cn=admin,dc=jesus,dc=local
 modifyTimestamp: 20250129154312Z
 ```
+
+</div>
