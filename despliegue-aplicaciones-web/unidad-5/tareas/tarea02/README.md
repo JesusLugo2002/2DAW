@@ -1,7 +1,7 @@
 # OpenLDAP: Instalación y configuración
 
 <div align=center>
-    <img src="/img/cover.png" alt="cover">
+    <img src="./img/cover.png" alt="cover">
 </div>
 
 <div align=justify>
