@@ -11,6 +11,9 @@
 - [Introducción](#introducción)
 - [Instalación de los paquetes](#instalación-de-los-paquetes)
 - [Configuración de los paquetes](#configuración-de-los-paquetes)
+- [Creación de la unidad organizativa](#creación-de-la-unidad-organizativa)
+  - [1. Crear plantilla](#1-crear-plantilla)
+  - [2. Añadimos la unidad](#2-añadimos-la-unidad)
 
 
 ## Introducción
@@ -78,5 +81,44 @@ entryCSN: 20250129154312.833672Z#000000#000#000000
 modifiersName: cn=admin,dc=jesus,dc=local
 modifyTimestamp: 20250129154312Z
 ```
+
+## Creación de la unidad organizativa
+
+Para la práctica es necesaria la creación de la unidad organizativa aplicada en la guia otorgada: para crear una, debemos hacer los siguientes pasos.
+
+### 1. Crear plantilla
+
+Crearemos una plantilla para, posteriormente, crear unidades organizativas. Para ello, hacemos:
+```sh
+sudo nano ou.ldif
+```
+
+E insertamos como contenido:
+```conf
+dn: ou=informatica,dc=clockwork,dc=local
+objectClass: top
+objectClass: organizationalUnit
+ou: informatica
+```
+
+### 2. Añadimos la unidad
+
+Con:
+```sh
+sudo ldapadd -x -D cn=admin,dc=clockwork,dc=local -W -f ou.ldfi
+```
+
+Desplegando este comando:
+
+`ldapadd`: comando base para agregar una entrada al servidor LDAP.
+
+`-x`: Esta opción indica que se debe usar la autenticación simple en lugar de SASL (Simple Authentication and Security Layer).
+
+`-D cn=admin,dc=clockwork,dc=local`: Esta opción especifica el DN (Distinguished Name) del usuario que se está autenticando. En este caso, se está utilizando el usuario admin en el dominio clockwork.local.
+
+`-W`: Esta opción indica que se debe solicitar la contraseña del usuario especificado en el DN anterior. Al usar esta opción, el sistema pedirá que ingreses la contraseña de admin.
+
+`-f ou.ldif`: Esta opción especifica el archivo que contiene las entradas LDAP que se desean agregar o modificar. En este caso, el archivo se llama ou.ldif.
+
 
 </div>
