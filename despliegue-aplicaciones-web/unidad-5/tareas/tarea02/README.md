@@ -14,6 +14,8 @@
 - [Creación de la unidad organizativa](#creación-de-la-unidad-organizativa)
   - [1. Crear plantilla](#1-crear-plantilla)
   - [2. Añadimos la unidad](#2-añadimos-la-unidad)
+- [Creación de un grupo](#creación-de-un-grupo)
+  - [1. Crear la plantilla](#1-crear-la-plantilla)
 
 
 ## Introducción
@@ -120,5 +122,16 @@ Desplegando este comando:
 
 `-f ou.ldif`: Esta opción especifica el archivo que contiene las entradas LDAP que se desean agregar o modificar. En este caso, el archivo se llama ou.ldif.
 
+## Creación de un grupo
+
+Para crear un grupo debemos seguir un proceso similar a la de la unidad organizativa: crear una plantilla base y luego añadir un ejemplo.
+
+### 1. Crear la plantilla
+
+Seguiremos usando como referencia la plantilla anterior copiándolo:
+
+```sh
+sudo cp ou.ldif grp.ldif
+```
 
 </div>
