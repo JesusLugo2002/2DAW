@@ -1,0 +1,102 @@
+[
+{
+  "model": "teams.team",
+  "pk": 1,
+  "fields": {
+    "name": "Andes",
+    "slug": "andes",
+    "league": "P",
+    "shield": "teams/shields/default.png"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 2,
+  "fields": {
+    "name": "Valence",
+    "slug": "valence",
+    "league": "L",
+    "shield": "teams/shields/default.png"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 3,
+  "fields": {
+    "name": "Talavera de la Reina",
+    "slug": "talavera-de-la-reina",
+    "league": "L",
+    "shield": "teams/shields/default.png"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 4,
+  "fields": {
+    "name": "Taozhuang",
+    "slug": "taozhuang",
+    "league": "C",
+    "shield": "teams/shields/default.png"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 5,
+  "fields": {
+    "name": "Heyuan",
+    "slug": "heyuan",
+    "league": "P",
+    "shield": "teams/shields/default.png"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 6,
+  "fields": {
+    "name": "Jais",
+    "slug": "jais",
+    "league": "L",
+    "shield": "teams/shields/default.png"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 7,
+  "fields": {
+    "name": "Lons-le-Saunier",
+    "slug": "lons-le-saunier",
+    "league": "C",
+    "shield": "teams/shields/default.png"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 8,
+  "fields": {
+    "name": "Ueno-ebisumachi",
+    "slug": "ueno-ebisumachi",
+    "league": "P",
+    "shield": "teams/shields/default.png"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 9,
+  "fields": {
+    "name": "Aleshtar",
+    "slug": "aleshtar",
+    "league": "B",
+    "shield": "teams/shields/default.png"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 10,
+  "fields": {
+    "name": "Blackpool",
+    "slug": "blackpool",
+    "league": "P",
+    "shield": "teams/shields/default.png"
+  }
+}
+]
