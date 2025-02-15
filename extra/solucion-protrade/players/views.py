@@ -1,15 +1,14 @@
 from datetime import date
-
+from decimal import Decimal
+import json
 from django.http import HttpRequest, JsonResponse
 
-from shared.utils import get_json_fields, require_method, require_token, validate_json_body
 from teams.models import Team
 
 from .models import Player
 from .serializers import PlayerSerializer
 
 
-@require_method('GET')
 def player_list(request: HttpRequest) -> JsonResponse:
     players = Player.objects.all()
     if position_query := request.GET.get('position'):
@@ -20,61 +19,33 @@ def player_list(request: HttpRequest) -> JsonResponse:
     return serializer.json_response()
 
 
-@require_method('GET')
-def player_detail(request: HttpRequest, player_slug: str) -> JsonResponse:
-    try:
-        player = Player.objects.get(slug=player_slug)
-    except Player.DoesNotExist:
-        return JsonResponse({'error': 'Player not found'}, status=404)
+def player_detail(request: HttpRequest, player_slug: str):
+    player = Player.objects.get(slug=player_slug)
     serializer = PlayerSerializer(player, request=request)
     return serializer.json_response()
 
 
-@require_method('POST')
-@validate_json_body
-@get_json_fields('name', 'slug', 'position', 'birth-date', 'market-value', 'team-slug')
-@require_token
 def add_player(request: HttpRequest):
-    if request.data['position'] not in Player.Position:
-        return JsonResponse({'error': 'Invalid position'}, status=400)
-    
-    try:
-        birth_date = date.fromisoformat(request.data['birth-date'])
-    except ValueError:
-        return JsonResponse({'error': 'Invalid birth date'}, status=400)
-
-    try:
-        team = Team.objects.get(slug=request.data['team-slug'])
-    except Team.DoesNotExist:
-        return JsonResponse({'error': 'Team not found'}, status=404)
-    
-    if Player.objects.filter(slug=request.data['slug']).exists():
-        return JsonResponse({'error': 'Player already exists'}, status=400)
-    
+    json_data = json.loads(request.body)
+    team = Team.objects.get(slug=json_data['team-slug'])
+    birth_date = date.fromisoformat(json_data['birth-date'])
     player = Player.objects.create(
-        name=request.data['name'],
-        slug=request.data['slug'],
-        position=request.data['position'],
+        name=json_data['name'],
+        slug=json_data['slug'],
+        position=json_data['position'],
         birth_date=birth_date,
-        market_value=request.data['market-value'],
+        market_value=json_data['market-value'],
         team=team,
     )
-
     return JsonResponse({'id': player.pk})
 
 
-@require_method('POST')
-@validate_json_body
-@get_json_fields('player-slug', 'team-slug')
-@require_token
 def transfer_player(request: HttpRequest):
-    try:
-        player = Player.objects.get(slug=request.data['player-slug'])
-    except Player.DoesNotExist:
-        return JsonResponse({'error': 'Player not found'}, status=404)
-    try:
-        team = Team.objects.get(slug=request.data['team-slug'])
-    except Team.DoesNotExist:
-        return JsonResponse({'error': 'Team not found'}, status=404)
-    resolution = player.transfer_team(team)
-    return JsonResponse(resolution)
+    json_data = json.loads(request.body)
+    player = Player.objects.get(slug=json_data['player-slug'])
+    new_team = Team.objects.get(slug=json_data['team-slug'])
+    if player.team.league != new_team.league:
+        player.market_value += player.market_value * Decimal(0.1)
+    player.team = new_team
+    player.save()
+    return JsonResponse({'id': player.pk})

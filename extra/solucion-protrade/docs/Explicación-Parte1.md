@@ -1,4 +1,4 @@
-# Explicación del examen
+# Explicación del examen - Parte 1
 
 - [Puesta en marcha](#puesta-en-marcha)
 - [Aplicaciones](#aplicaciones)
@@ -10,6 +10,7 @@
 - [Serializadores](#serializadores)
   - [PlayerSerializer](#playerserializer)
   - [TeamSerializer](#teamserializer)
+- [Interfaz administrativa](#interfaz-administrativa)
 
 
 ## Puesta en marcha
@@ -217,3 +218,30 @@ class TeamSerializer(BaseSerializer):
             'shield': self.build_url(instance.shield.url),
         }
 ```
+
+## Interfaz administrativa
+
+Otra cosa que puedes hacer ya a este punto (y lo recomendable a mi parecer, porque son tests pasados fácil y rápido), es activar los modelos en la interfaz administrativa. Preocupense en activarlo del modo simple, sin meter atributos extras ni nada.
+
+```py
+from django.contrib import admin
+
+from .models import YourModel
+
+@admin.register(YourModel)
+class YourModelAdmin(admin.ModelAdmin):
+    pass
+```
+
+Esto sería lo que debería copiarse y pegarse en cada `app/admin.py`, siendo `YourModel` el nombre de tu modelo a registrar. Si lo vas a hacer con el modelo `users.Token`, debemos entrar a `users/admin.py` e insertar:
+
+```py
+from django.contrib import admin
+
+from .models import Token
+
+@admin.register(Token)
+class TokenAdmin(admin.ModelAdmin):
+    pass
+```
+
