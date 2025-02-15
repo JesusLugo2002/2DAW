@@ -1,0 +1,10 @@
+slug = "protrade"
+bundle = [
+    "docs/README.pdf",
+    "tests/*.py",
+    "fixtures/*.json",
+    "requirements.txt",
+    "justfile",
+    "pytest.ini",
+]
+todo = [ "main.py",]

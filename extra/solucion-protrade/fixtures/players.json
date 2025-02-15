@@ -1,0 +1,1302 @@
+[
+{
+  "model": "players.player",
+  "pk": 1,
+  "fields": {
+    "name": "Michelle Jacobs",
+    "slug": "michelle-jacobs",
+    "position": "G",
+    "birth_date": "2007-11-21",
+    "market_value": "35.39",
+    "photo": "players/photos/default.png",
+    "team": 6
+  }
+},
+{
+  "model": "players.player",
+  "pk": 2,
+  "fields": {
+    "name": "James Cortez",
+    "slug": "james-cortez",
+    "position": "M",
+    "birth_date": "1985-05-13",
+    "market_value": "164.57",
+    "photo": "players/photos/default.png",
+    "team": 9
+  }
+},
+{
+  "model": "players.player",
+  "pk": 3,
+  "fields": {
+    "name": "Theresa Miles",
+    "slug": "theresa-miles",
+    "position": "D",
+    "birth_date": "1995-08-02",
+    "market_value": "138.29",
+    "photo": "players/photos/default.png",
+    "team": 1
+  }
+},
+{
+  "model": "players.player",
+  "pk": 4,
+  "fields": {
+    "name": "Jennifer Valdez",
+    "slug": "jennifer-valdez",
+    "position": "F",
+    "birth_date": "1988-01-13",
+    "market_value": "93.81",
+    "photo": "players/photos/default.png",
+    "team": 10
+  }
+},
+{
+  "model": "players.player",
+  "pk": 5,
+  "fields": {
+    "name": "Eric Ross",
+    "slug": "eric-ross",
+    "position": "G",
+    "birth_date": "1994-03-23",
+    "market_value": "17.62",
+    "photo": "players/photos/default.png",
+    "team": 3
+  }
+},
+{
+  "model": "players.player",
+  "pk": 6,
+  "fields": {
+    "name": "Jeremy Bartlett",
+    "slug": "jeremy-bartlett",
+    "position": "M",
+    "birth_date": "1992-10-28",
+    "market_value": "113.64",
+    "photo": "players/photos/default.png",
+    "team": 5
+  }
+},
+{
+  "model": "players.player",
+  "pk": 7,
+  "fields": {
+    "name": "Ashley Wilson",
+    "slug": "ashley-wilson",
+    "position": "D",
+    "birth_date": "1992-09-08",
+    "market_value": "157.84",
+    "photo": "players/photos/default.png",
+    "team": 8
+  }
+},
+{
+  "model": "players.player",
+  "pk": 8,
+  "fields": {
+    "name": "Victor Baker",
+    "slug": "victor-baker",
+    "position": "M",
+    "birth_date": "1987-06-26",
+    "market_value": "77.18",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 9,
+  "fields": {
+    "name": "Kelsey Taylor",
+    "slug": "kelsey-taylor",
+    "position": "D",
+    "birth_date": "1984-05-10",
+    "market_value": "134.78",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 10,
+  "fields": {
+    "name": "Michele Henry",
+    "slug": "michele-henry",
+    "position": "D",
+    "birth_date": "2003-02-15",
+    "market_value": "123.03",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 11,
+  "fields": {
+    "name": "Tabitha Bell",
+    "slug": "tabitha-bell",
+    "position": "D",
+    "birth_date": "1995-09-15",
+    "market_value": "97.97",
+    "photo": "players/photos/default.png",
+    "team": 1
+  }
+},
+{
+  "model": "players.player",
+  "pk": 12,
+  "fields": {
+    "name": "Charles James",
+    "slug": "charles-james",
+    "position": "M",
+    "birth_date": "2007-08-22",
+    "market_value": "68.84",
+    "photo": "players/photos/default.png",
+    "team": 6
+  }
+},
+{
+  "model": "players.player",
+  "pk": 13,
+  "fields": {
+    "name": "Emily Bradley",
+    "slug": "emily-bradley",
+    "position": "D",
+    "birth_date": "2003-07-23",
+    "market_value": "127.07",
+    "photo": "players/photos/default.png",
+    "team": 4
+  }
+},
+{
+  "model": "players.player",
+  "pk": 14,
+  "fields": {
+    "name": "Daniel Hart",
+    "slug": "daniel-hart",
+    "position": "D",
+    "birth_date": "1986-11-21",
+    "market_value": "136.19",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 15,
+  "fields": {
+    "name": "Ronald Padilla",
+    "slug": "ronald-padilla",
+    "position": "F",
+    "birth_date": "2001-09-15",
+    "market_value": "66.20",
+    "photo": "players/photos/default.png",
+    "team": 9
+  }
+},
+{
+  "model": "players.player",
+  "pk": 16,
+  "fields": {
+    "name": "Nicole Mack",
+    "slug": "nicole-mack",
+    "position": "G",
+    "birth_date": "1996-01-05",
+    "market_value": "94.40",
+    "photo": "players/photos/default.png",
+    "team": 10
+  }
+},
+{
+  "model": "players.player",
+  "pk": 17,
+  "fields": {
+    "name": "Mark Mendoza III",
+    "slug": "mark-mendoza-iii",
+    "position": "F",
+    "birth_date": "1988-01-23",
+    "market_value": "94.97",
+    "photo": "players/photos/default.png",
+    "team": 4
+  }
+},
+{
+  "model": "players.player",
+  "pk": 18,
+  "fields": {
+    "name": "Antonio Thompson",
+    "slug": "antonio-thompson",
+    "position": "D",
+    "birth_date": "1990-08-24",
+    "market_value": "129.06",
+    "photo": "players/photos/default.png",
+    "team": 3
+  }
+},
+{
+  "model": "players.player",
+  "pk": 19,
+  "fields": {
+    "name": "William Huang",
+    "slug": "william-huang",
+    "position": "F",
+    "birth_date": "1984-08-30",
+    "market_value": "163.59",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 20,
+  "fields": {
+    "name": "Yolanda Johnston",
+    "slug": "yolanda-johnston",
+    "position": "D",
+    "birth_date": "2001-03-21",
+    "market_value": "185.32",
+    "photo": "players/photos/default.png",
+    "team": 3
+  }
+},
+{
+  "model": "players.player",
+  "pk": 21,
+  "fields": {
+    "name": "Christopher Welch",
+    "slug": "christopher-welch",
+    "position": "D",
+    "birth_date": "2002-03-08",
+    "market_value": "34.43",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 22,
+  "fields": {
+    "name": "Nicholas Jones",
+    "slug": "nicholas-jones",
+    "position": "F",
+    "birth_date": "2007-03-29",
+    "market_value": "4.58",
+    "photo": "players/photos/default.png",
+    "team": 6
+  }
+},
+{
+  "model": "players.player",
+  "pk": 23,
+  "fields": {
+    "name": "Jerome White",
+    "slug": "jerome-white",
+    "position": "D",
+    "birth_date": "2004-07-18",
+    "market_value": "132.20",
+    "photo": "players/photos/default.png",
+    "team": 8
+  }
+},
+{
+  "model": "players.player",
+  "pk": 24,
+  "fields": {
+    "name": "Dana Henderson",
+    "slug": "dana-henderson",
+    "position": "D",
+    "birth_date": "1999-11-25",
+    "market_value": "81.77",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 25,
+  "fields": {
+    "name": "Joseph Graham",
+    "slug": "joseph-graham",
+    "position": "F",
+    "birth_date": "1988-03-15",
+    "market_value": "74.97",
+    "photo": "players/photos/default.png",
+    "team": 6
+  }
+},
+{
+  "model": "players.player",
+  "pk": 26,
+  "fields": {
+    "name": "Jerry Chavez",
+    "slug": "jerry-chavez",
+    "position": "F",
+    "birth_date": "1990-04-19",
+    "market_value": "111.26",
+    "photo": "players/photos/default.png",
+    "team": 1
+  }
+},
+{
+  "model": "players.player",
+  "pk": 27,
+  "fields": {
+    "name": "Daniel Davila",
+    "slug": "daniel-davila",
+    "position": "D",
+    "birth_date": "1992-07-10",
+    "market_value": "161.90",
+    "photo": "players/photos/default.png",
+    "team": 5
+  }
+},
+{
+  "model": "players.player",
+  "pk": 28,
+  "fields": {
+    "name": "Joshua Johnson",
+    "slug": "joshua-johnson",
+    "position": "M",
+    "birth_date": "1985-03-28",
+    "market_value": "138.61",
+    "photo": "players/photos/default.png",
+    "team": 6
+  }
+},
+{
+  "model": "players.player",
+  "pk": 29,
+  "fields": {
+    "name": "Jason Jones",
+    "slug": "jason-jones",
+    "position": "M",
+    "birth_date": "1995-06-26",
+    "market_value": "193.13",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 30,
+  "fields": {
+    "name": "Andrew Cortez",
+    "slug": "andrew-cortez",
+    "position": "M",
+    "birth_date": "2006-10-10",
+    "market_value": "89.38",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 31,
+  "fields": {
+    "name": "Ashley Franklin",
+    "slug": "ashley-franklin",
+    "position": "F",
+    "birth_date": "1988-11-15",
+    "market_value": "87.67",
+    "photo": "players/photos/default.png",
+    "team": 8
+  }
+},
+{
+  "model": "players.player",
+  "pk": 32,
+  "fields": {
+    "name": "Paul Ferguson",
+    "slug": "paul-ferguson",
+    "position": "F",
+    "birth_date": "1991-01-05",
+    "market_value": "197.71",
+    "photo": "players/photos/default.png",
+    "team": 9
+  }
+},
+{
+  "model": "players.player",
+  "pk": 33,
+  "fields": {
+    "name": "Mary Waters",
+    "slug": "mary-waters",
+    "position": "D",
+    "birth_date": "1986-09-25",
+    "market_value": "102.41",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 34,
+  "fields": {
+    "name": "Dale Williams",
+    "slug": "dale-williams",
+    "position": "G",
+    "birth_date": "1987-04-17",
+    "market_value": "194.00",
+    "photo": "players/photos/default.png",
+    "team": 5
+  }
+},
+{
+  "model": "players.player",
+  "pk": 35,
+  "fields": {
+    "name": "Michael Shelton",
+    "slug": "michael-shelton",
+    "position": "M",
+    "birth_date": "1987-01-06",
+    "market_value": "131.57",
+    "photo": "players/photos/default.png",
+    "team": 3
+  }
+},
+{
+  "model": "players.player",
+  "pk": 36,
+  "fields": {
+    "name": "Gregory Baldwin",
+    "slug": "gregory-baldwin",
+    "position": "D",
+    "birth_date": "1997-11-30",
+    "market_value": "77.51",
+    "photo": "players/photos/default.png",
+    "team": 5
+  }
+},
+{
+  "model": "players.player",
+  "pk": 37,
+  "fields": {
+    "name": "Jamie Brown",
+    "slug": "jamie-brown",
+    "position": "F",
+    "birth_date": "2000-11-15",
+    "market_value": "52.18",
+    "photo": "players/photos/default.png",
+    "team": 3
+  }
+},
+{
+  "model": "players.player",
+  "pk": 38,
+  "fields": {
+    "name": "Ryan Welch",
+    "slug": "ryan-welch",
+    "position": "F",
+    "birth_date": "1998-09-14",
+    "market_value": "21.24",
+    "photo": "players/photos/default.png",
+    "team": 3
+  }
+},
+{
+  "model": "players.player",
+  "pk": 39,
+  "fields": {
+    "name": "Luke Fuentes",
+    "slug": "luke-fuentes",
+    "position": "F",
+    "birth_date": "1991-06-07",
+    "market_value": "5.77",
+    "photo": "players/photos/default.png",
+    "team": 1
+  }
+},
+{
+  "model": "players.player",
+  "pk": 40,
+  "fields": {
+    "name": "Jesse Davis",
+    "slug": "jesse-davis",
+    "position": "M",
+    "birth_date": "1986-02-08",
+    "market_value": "195.54",
+    "photo": "players/photos/default.png",
+    "team": 5
+  }
+},
+{
+  "model": "players.player",
+  "pk": 41,
+  "fields": {
+    "name": "Charles Randolph",
+    "slug": "charles-randolph",
+    "position": "D",
+    "birth_date": "2003-04-11",
+    "market_value": "133.96",
+    "photo": "players/photos/default.png",
+    "team": 10
+  }
+},
+{
+  "model": "players.player",
+  "pk": 42,
+  "fields": {
+    "name": "Francisco Dillon",
+    "slug": "francisco-dillon",
+    "position": "D",
+    "birth_date": "2007-03-15",
+    "market_value": "0.66",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 43,
+  "fields": {
+    "name": "Carl Gibbs",
+    "slug": "carl-gibbs",
+    "position": "D",
+    "birth_date": "1984-10-30",
+    "market_value": "93.60",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 44,
+  "fields": {
+    "name": "Heather Perkins",
+    "slug": "heather-perkins",
+    "position": "F",
+    "birth_date": "1996-07-06",
+    "market_value": "95.46",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 45,
+  "fields": {
+    "name": "Joseph Wright",
+    "slug": "joseph-wright",
+    "position": "D",
+    "birth_date": "1992-04-02",
+    "market_value": "38.10",
+    "photo": "players/photos/default.png",
+    "team": 1
+  }
+},
+{
+  "model": "players.player",
+  "pk": 46,
+  "fields": {
+    "name": "Daniel Smith",
+    "slug": "daniel-smith",
+    "position": "D",
+    "birth_date": "2000-01-16",
+    "market_value": "69.21",
+    "photo": "players/photos/default.png",
+    "team": 8
+  }
+},
+{
+  "model": "players.player",
+  "pk": 47,
+  "fields": {
+    "name": "Troy Roberson",
+    "slug": "troy-roberson",
+    "position": "F",
+    "birth_date": "2003-12-28",
+    "market_value": "71.48",
+    "photo": "players/photos/default.png",
+    "team": 10
+  }
+},
+{
+  "model": "players.player",
+  "pk": 48,
+  "fields": {
+    "name": "Anna Wong",
+    "slug": "anna-wong",
+    "position": "F",
+    "birth_date": "2003-02-11",
+    "market_value": "0.76",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 49,
+  "fields": {
+    "name": "Bradley Watson",
+    "slug": "bradley-watson",
+    "position": "D",
+    "birth_date": "2006-08-24",
+    "market_value": "66.91",
+    "photo": "players/photos/default.png",
+    "team": 5
+  }
+},
+{
+  "model": "players.player",
+  "pk": 50,
+  "fields": {
+    "name": "Amy Fernandez",
+    "slug": "amy-fernandez",
+    "position": "M",
+    "birth_date": "2004-06-07",
+    "market_value": "73.39",
+    "photo": "players/photos/default.png",
+    "team": 1
+  }
+},
+{
+  "model": "players.player",
+  "pk": 51,
+  "fields": {
+    "name": "Danielle Wu",
+    "slug": "danielle-wu",
+    "position": "F",
+    "birth_date": "1995-09-18",
+    "market_value": "115.33",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 52,
+  "fields": {
+    "name": "Emily Evans",
+    "slug": "emily-evans",
+    "position": "M",
+    "birth_date": "1993-05-27",
+    "market_value": "103.70",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 53,
+  "fields": {
+    "name": "Taylor Johnson",
+    "slug": "taylor-johnson",
+    "position": "M",
+    "birth_date": "1995-05-09",
+    "market_value": "59.28",
+    "photo": "players/photos/default.png",
+    "team": 6
+  }
+},
+{
+  "model": "players.player",
+  "pk": 54,
+  "fields": {
+    "name": "Edgar Johnson",
+    "slug": "edgar-johnson",
+    "position": "F",
+    "birth_date": "1987-11-16",
+    "market_value": "146.53",
+    "photo": "players/photos/default.png",
+    "team": 10
+  }
+},
+{
+  "model": "players.player",
+  "pk": 55,
+  "fields": {
+    "name": "Andrea Atkins",
+    "slug": "andrea-atkins",
+    "position": "M",
+    "birth_date": "2003-01-01",
+    "market_value": "8.92",
+    "photo": "players/photos/default.png",
+    "team": 5
+  }
+},
+{
+  "model": "players.player",
+  "pk": 56,
+  "fields": {
+    "name": "Dr. Tracey Bates MD",
+    "slug": "dr-tracey-bates-md",
+    "position": "M",
+    "birth_date": "1986-04-11",
+    "market_value": "147.74",
+    "photo": "players/photos/default.png",
+    "team": 1
+  }
+},
+{
+  "model": "players.player",
+  "pk": 57,
+  "fields": {
+    "name": "Aaron Martinez",
+    "slug": "aaron-martinez",
+    "position": "F",
+    "birth_date": "1985-12-21",
+    "market_value": "140.54",
+    "photo": "players/photos/default.png",
+    "team": 9
+  }
+},
+{
+  "model": "players.player",
+  "pk": 58,
+  "fields": {
+    "name": "Maureen Morales",
+    "slug": "maureen-morales",
+    "position": "F",
+    "birth_date": "1997-11-15",
+    "market_value": "196.52",
+    "photo": "players/photos/default.png",
+    "team": 1
+  }
+},
+{
+  "model": "players.player",
+  "pk": 59,
+  "fields": {
+    "name": "Terry Yang",
+    "slug": "terry-yang",
+    "position": "F",
+    "birth_date": "1989-06-18",
+    "market_value": "59.38",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 60,
+  "fields": {
+    "name": "Kristina Tate",
+    "slug": "kristina-tate",
+    "position": "D",
+    "birth_date": "1985-04-17",
+    "market_value": "50.61",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 61,
+  "fields": {
+    "name": "Alyssa Wilkinson",
+    "slug": "alyssa-wilkinson",
+    "position": "D",
+    "birth_date": "1998-03-17",
+    "market_value": "136.75",
+    "photo": "players/photos/default.png",
+    "team": 8
+  }
+},
+{
+  "model": "players.player",
+  "pk": 62,
+  "fields": {
+    "name": "James Anderson",
+    "slug": "james-anderson",
+    "position": "G",
+    "birth_date": "1991-05-16",
+    "market_value": "184.67",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 63,
+  "fields": {
+    "name": "Stephanie Smith",
+    "slug": "stephanie-smith",
+    "position": "G",
+    "birth_date": "2003-03-18",
+    "market_value": "12.86",
+    "photo": "players/photos/default.png",
+    "team": 4
+  }
+},
+{
+  "model": "players.player",
+  "pk": 64,
+  "fields": {
+    "name": "Gary Jones",
+    "slug": "gary-jones",
+    "position": "G",
+    "birth_date": "2004-06-29",
+    "market_value": "50.61",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 65,
+  "fields": {
+    "name": "Paula Herring",
+    "slug": "paula-herring",
+    "position": "M",
+    "birth_date": "1991-12-05",
+    "market_value": "69.36",
+    "photo": "players/photos/default.png",
+    "team": 9
+  }
+},
+{
+  "model": "players.player",
+  "pk": 66,
+  "fields": {
+    "name": "Monica Harper",
+    "slug": "monica-harper",
+    "position": "M",
+    "birth_date": "1996-04-09",
+    "market_value": "128.85",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 67,
+  "fields": {
+    "name": "Jessica Walker",
+    "slug": "jessica-walker",
+    "position": "M",
+    "birth_date": "1990-11-16",
+    "market_value": "173.89",
+    "photo": "players/photos/default.png",
+    "team": 8
+  }
+},
+{
+  "model": "players.player",
+  "pk": 68,
+  "fields": {
+    "name": "Adrian Rice",
+    "slug": "adrian-rice",
+    "position": "D",
+    "birth_date": "1992-08-28",
+    "market_value": "126.09",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 69,
+  "fields": {
+    "name": "Diana Snyder",
+    "slug": "diana-snyder",
+    "position": "D",
+    "birth_date": "1993-07-03",
+    "market_value": "57.08",
+    "photo": "players/photos/default.png",
+    "team": 4
+  }
+},
+{
+  "model": "players.player",
+  "pk": 70,
+  "fields": {
+    "name": "David Dudley DDS",
+    "slug": "david-dudley-dds",
+    "position": "G",
+    "birth_date": "1985-12-12",
+    "market_value": "8.76",
+    "photo": "players/photos/default.png",
+    "team": 10
+  }
+},
+{
+  "model": "players.player",
+  "pk": 71,
+  "fields": {
+    "name": "John Jones",
+    "slug": "john-jones",
+    "position": "G",
+    "birth_date": "1995-12-22",
+    "market_value": "162.61",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 72,
+  "fields": {
+    "name": "Eric Hill",
+    "slug": "eric-hill",
+    "position": "F",
+    "birth_date": "1985-10-29",
+    "market_value": "123.14",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 73,
+  "fields": {
+    "name": "Dale Shelton",
+    "slug": "dale-shelton",
+    "position": "F",
+    "birth_date": "1995-06-10",
+    "market_value": "170.23",
+    "photo": "players/photos/default.png",
+    "team": 3
+  }
+},
+{
+  "model": "players.player",
+  "pk": 74,
+  "fields": {
+    "name": "Steven Mcgrath",
+    "slug": "steven-mcgrath",
+    "position": "M",
+    "birth_date": "1991-10-05",
+    "market_value": "144.28",
+    "photo": "players/photos/default.png",
+    "team": 5
+  }
+},
+{
+  "model": "players.player",
+  "pk": 75,
+  "fields": {
+    "name": "Brendan Bowers",
+    "slug": "brendan-bowers",
+    "position": "G",
+    "birth_date": "1985-03-31",
+    "market_value": "34.94",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 76,
+  "fields": {
+    "name": "David Carlson",
+    "slug": "david-carlson",
+    "position": "F",
+    "birth_date": "1997-06-15",
+    "market_value": "48.74",
+    "photo": "players/photos/default.png",
+    "team": 4
+  }
+},
+{
+  "model": "players.player",
+  "pk": 77,
+  "fields": {
+    "name": "Jose Mayo",
+    "slug": "jose-mayo",
+    "position": "F",
+    "birth_date": "1997-03-16",
+    "market_value": "22.68",
+    "photo": "players/photos/default.png",
+    "team": 1
+  }
+},
+{
+  "model": "players.player",
+  "pk": 78,
+  "fields": {
+    "name": "Pamela Mcdowell",
+    "slug": "pamela-mcdowell",
+    "position": "G",
+    "birth_date": "2003-02-08",
+    "market_value": "155.63",
+    "photo": "players/photos/default.png",
+    "team": 4
+  }
+},
+{
+  "model": "players.player",
+  "pk": 79,
+  "fields": {
+    "name": "Leroy Ellis",
+    "slug": "leroy-ellis",
+    "position": "D",
+    "birth_date": "1989-11-12",
+    "market_value": "150.34",
+    "photo": "players/photos/default.png",
+    "team": 6
+  }
+},
+{
+  "model": "players.player",
+  "pk": 80,
+  "fields": {
+    "name": "Theodore Clark",
+    "slug": "theodore-clark",
+    "position": "D",
+    "birth_date": "2005-07-29",
+    "market_value": "136.89",
+    "photo": "players/photos/default.png",
+    "team": 1
+  }
+},
+{
+  "model": "players.player",
+  "pk": 81,
+  "fields": {
+    "name": "Amanda Klein",
+    "slug": "amanda-klein",
+    "position": "G",
+    "birth_date": "2002-01-25",
+    "market_value": "138.62",
+    "photo": "players/photos/default.png",
+    "team": 4
+  }
+},
+{
+  "model": "players.player",
+  "pk": 82,
+  "fields": {
+    "name": "Kristina Smith",
+    "slug": "kristina-smith",
+    "position": "F",
+    "birth_date": "1989-06-19",
+    "market_value": "39.71",
+    "photo": "players/photos/default.png",
+    "team": 10
+  }
+},
+{
+  "model": "players.player",
+  "pk": 83,
+  "fields": {
+    "name": "Teresa Kirk",
+    "slug": "teresa-kirk",
+    "position": "M",
+    "birth_date": "2001-10-20",
+    "market_value": "148.49",
+    "photo": "players/photos/default.png",
+    "team": 9
+  }
+},
+{
+  "model": "players.player",
+  "pk": 84,
+  "fields": {
+    "name": "Christopher Delgado",
+    "slug": "christopher-delgado",
+    "position": "G",
+    "birth_date": "1996-03-04",
+    "market_value": "62.15",
+    "photo": "players/photos/default.png",
+    "team": 6
+  }
+},
+{
+  "model": "players.player",
+  "pk": 85,
+  "fields": {
+    "name": "Elizabeth Hunt",
+    "slug": "elizabeth-hunt",
+    "position": "M",
+    "birth_date": "1990-11-01",
+    "market_value": "197.94",
+    "photo": "players/photos/default.png",
+    "team": 8
+  }
+},
+{
+  "model": "players.player",
+  "pk": 86,
+  "fields": {
+    "name": "Patricia Cain",
+    "slug": "patricia-cain",
+    "position": "M",
+    "birth_date": "2005-09-12",
+    "market_value": "180.72",
+    "photo": "players/photos/default.png",
+    "team": 4
+  }
+},
+{
+  "model": "players.player",
+  "pk": 87,
+  "fields": {
+    "name": "Lindsay Anderson",
+    "slug": "lindsay-anderson",
+    "position": "D",
+    "birth_date": "2004-08-10",
+    "market_value": "111.94",
+    "photo": "players/photos/default.png",
+    "team": 5
+  }
+},
+{
+  "model": "players.player",
+  "pk": 88,
+  "fields": {
+    "name": "Ashley Richard",
+    "slug": "ashley-richard",
+    "position": "M",
+    "birth_date": "1997-10-17",
+    "market_value": "101.27",
+    "photo": "players/photos/default.png",
+    "team": 5
+  }
+},
+{
+  "model": "players.player",
+  "pk": 89,
+  "fields": {
+    "name": "Dennis Lambert",
+    "slug": "dennis-lambert",
+    "position": "F",
+    "birth_date": "1998-03-27",
+    "market_value": "142.76",
+    "photo": "players/photos/default.png",
+    "team": 3
+  }
+},
+{
+  "model": "players.player",
+  "pk": 90,
+  "fields": {
+    "name": "Larry Mcgee",
+    "slug": "larry-mcgee",
+    "position": "M",
+    "birth_date": "1996-04-04",
+    "market_value": "189.54",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 91,
+  "fields": {
+    "name": "Don Lee",
+    "slug": "don-lee",
+    "position": "G",
+    "birth_date": "1995-05-01",
+    "market_value": "192.95",
+    "photo": "players/photos/default.png",
+    "team": 1
+  }
+},
+{
+  "model": "players.player",
+  "pk": 92,
+  "fields": {
+    "name": "Cindy Lucas",
+    "slug": "cindy-lucas",
+    "position": "F",
+    "birth_date": "1987-01-27",
+    "market_value": "103.00",
+    "photo": "players/photos/default.png",
+    "team": 6
+  }
+},
+{
+  "model": "players.player",
+  "pk": 93,
+  "fields": {
+    "name": "Alyssa Washington",
+    "slug": "alyssa-washington",
+    "position": "D",
+    "birth_date": "1991-08-05",
+    "market_value": "78.30",
+    "photo": "players/photos/default.png",
+    "team": 5
+  }
+},
+{
+  "model": "players.player",
+  "pk": 94,
+  "fields": {
+    "name": "Jill Wagner",
+    "slug": "jill-wagner",
+    "position": "M",
+    "birth_date": "2008-07-26",
+    "market_value": "99.77",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 95,
+  "fields": {
+    "name": "Brian Davis",
+    "slug": "brian-davis",
+    "position": "F",
+    "birth_date": "1993-12-09",
+    "market_value": "67.76",
+    "photo": "players/photos/default.png",
+    "team": 8
+  }
+},
+{
+  "model": "players.player",
+  "pk": 96,
+  "fields": {
+    "name": "Paula Vasquez",
+    "slug": "paula-vasquez",
+    "position": "D",
+    "birth_date": "2000-12-02",
+    "market_value": "158.72",
+    "photo": "players/photos/default.png",
+    "team": 4
+  }
+},
+{
+  "model": "players.player",
+  "pk": 97,
+  "fields": {
+    "name": "Jennifer Rogers",
+    "slug": "jennifer-rogers",
+    "position": "F",
+    "birth_date": "2005-04-13",
+    "market_value": "147.57",
+    "photo": "players/photos/default.png",
+    "team": 6
+  }
+},
+{
+  "model": "players.player",
+  "pk": 98,
+  "fields": {
+    "name": "Joseph Brown",
+    "slug": "joseph-brown",
+    "position": "G",
+    "birth_date": "2001-06-02",
+    "market_value": "45.84",
+    "photo": "players/photos/default.png",
+    "team": 2
+  }
+},
+{
+  "model": "players.player",
+  "pk": 99,
+  "fields": {
+    "name": "Joshua Contreras",
+    "slug": "joshua-contreras",
+    "position": "G",
+    "birth_date": "1990-05-06",
+    "market_value": "60.10",
+    "photo": "players/photos/default.png",
+    "team": 7
+  }
+},
+{
+  "model": "players.player",
+  "pk": 100,
+  "fields": {
+    "name": "Elizabeth Morris",
+    "slug": "elizabeth-morris",
+    "position": "G",
+    "birth_date": "1993-12-01",
+    "market_value": "52.97",
+    "photo": "players/photos/default.png",
+    "team": 6
+  }
+}
+]
